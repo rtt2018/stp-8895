@@ -4,11 +4,28 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+  gap: 48px;
 }
 
 main {
-  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  // flex-grow: 1;
+  gap: 48px;
 }
-main:has(.back-link) {
-  text-align: center;
+
+@media only screen and (min-width: 1200px) {
+  body {
+    gap: 80px;
+  }
+
+  main {
+    gap: 80px;
+  }
 }
+// main:has(.back-link) {
+//   text-align: center;
+// }
