@@ -1,25 +1,61 @@
-<header data-class="section">
-  <div data-class="container">
-    <img src="" alt="" srcset="" />
-    <nav data-class="nav">
-      <button type="button" data-class="burger-btn" data-action="open">
-        Burger menu
-      </button>
-      <ul>
-        <li><a data-class="header-nav-link" href="index.html">Home</a></li>
-        <li><a data-class="header-nav-link" href="#benefits">Benefits</a></li>
-        <li>
-          <a data-class="header-nav-link" href="#feature">Feature Keys</a>
-        </li>
-        <li>
-          <a data-class="header-nav-link" href="#about">About This Game</a>
-        </li>
-        <li><a data-class="header-nav-link" href="#howto">How to Play</a></li>
-        <li><a data-class="header-nav-link" href="#faq">FAQ</a></li>
-        <li><a data-class="header-nav-link" href="#reviews">Reviews</a></li>
-        <li><a data-class="header-nav-link" href="#gallery">Gallery</a></li>
-      </ul>
+<header data-class="section" data-type="header">
+  <div data-class="container" data-type="header-container">
+    <div data-class="wrapper">
+      <a href="index.html">
+        <picture>
+          <source
+            srcset="
+              /img/header/logo-header@1x.jpg 1x,
+              /img/header/logo-header@2x.jpg 2x
+            "
+          />
+          <img src="/img/header/logo-header@1x.jpg" alt="planer logo" />
+        </picture>
+      </a>
+      <nav data-class="nav">
+        <button type="button" data-class="burger-btn" data-action="open">
+          Burger menu
+        </button>
+        <ul data-class="nav-links">
+          <li><a data-class="header-nav-link" href="index.html">Home</a></li>
+          <li><a data-class="header-nav-link" href="#benefits">Benefits</a></li>
+          <li>
+            <a data-class="header-nav-link" href="#feature">Feature Keys</a>
+          </li>
+          <li>
+            <a data-class="header-nav-link" href="#about">About This Game</a>
+          </li>
+          <li><a data-class="header-nav-link" href="#howto">How to Play</a></li>
+          <li><a data-class="header-nav-link" href="#faq">FAQ</a></li>
+          <li><a data-class="header-nav-link" href="#reviews">Reviews</a></li>
+          <li><a data-class="header-nav-link" href="#gallery">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div data-class="modal-window">
+      <div data-class="modal-wrapper">
+        <nav data-class="modal-nav">
+          <ul>
+            <li><a data-class="header-nav-link" href="index.html">Home</a></li>
+            <li>
+              <a data-class="header-nav-link" href="#benefits">Benefits</a>
+            </li>
+            <li>
+              <a data-class="header-nav-link" href="#feature">Feature Keys</a>
+            </li>
+            <li>
+              <a data-class="header-nav-link" href="#about">About This Game</a>
+            </li>
+            <li>
+              <a data-class="header-nav-link" href="#howto">How to Play</a>
+            </li>
+            <li><a data-class="header-nav-link" href="#faq">FAQ</a></li>
+            <li><a data-class="header-nav-link" href="#reviews">Reviews</a></li>
+            <li><a data-class="header-nav-link" href="#gallery">Gallery</a></li>
+          </ul>
+        </nav>
+      </div>
       <button type="button" class="btn-close" data-action="close">svg</button>
-    </nav>
+    </div>
   </div>
 </header>

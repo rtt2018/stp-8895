@@ -5,3 +5,50 @@
 [data-visible='close'] {
   display: none;
 }
+
+[data-type='header'] {
+  position: fixed;
+  width: 100vw;
+  height: 48px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 6px 12px 0 rgba(151, 151, 151, 0.2);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+[data-class='nav'] {
+  display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  [data-type='header'] {
+    height: 80px;
+  }
+
+  [data-type='header-container'] {
+    height: 100%;
+  }
+
+  [data-class='nav'] {
+    display: block;
+  }
+
+  [data-class='burger-btn'] {
+    display: none;
+  }
+
+  [data-class='modal-window'] {
+    display: none;
+  }
+
+  [data-class='nav-links'] {
+    display: flex;
+    gap: 24px;
+  }
+
+  [data-class='wrapper'] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+}
