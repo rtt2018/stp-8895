@@ -11,9 +11,7 @@ main {
   display: flex;
   flex-direction: column;
   min-width: 100vw;
-  min-height: 100vh;
   margin: 0;
-  // flex-grow: 1;
   gap: 48px;
 }
 
@@ -26,6 +24,3 @@ main {
     gap: 80px;
   }
 }
-// main:has(.back-link) {
-//   text-align: center;
-// }
