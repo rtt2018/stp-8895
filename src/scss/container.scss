@@ -1,9 +1,9 @@
 /* Styles for Mobile devices */
-[data-class='section'] {
+.section {
   scroll-margin-top: 48px;
 }
 
-[data-class='container'] {
+.container {
   padding: 0 16px;
   margin: 0 auto;
   width: 320px;
@@ -11,12 +11,12 @@
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1200px) {
-  [data-class='container'] {
+  .container {
     padding: 0 72px;
     width: 1200px;
   }
 
-  [data-class='section'] {
+  .section {
     scroll-margin-top: 80px;
   }
 }
