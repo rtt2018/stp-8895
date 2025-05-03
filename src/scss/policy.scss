@@ -1,3 +1,20 @@
+.policy-nav {
+  padding-top: 48px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #1873cd;
+}
+
+.policy-nav:active {
+  color: #0e4376;
+}
+
+.policy-container {
+  padding: 48px 16px;
+}
+
 .policy-title {
   font-family: 'Nunito', sans-serif;
   font-weight: 900;
@@ -7,12 +24,4 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.policy-nav {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 157%;
-  color: #1873cd;
 }
