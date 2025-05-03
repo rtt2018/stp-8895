@@ -1,11 +1,3 @@
-[data-visible='open'] {
-  display: flex;
-}
-
-[data-visible='close'] {
-  display: none;
-}
-
 [data-type='header'] {
   position: fixed;
   width: 100vw;
@@ -17,6 +9,16 @@
 
 [data-class='nav'] {
   display: none;
+}
+
+[data-class='header-nav-link'] {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+[data-class='modal-window'] {
+  display: block;
 }
 
 @media only screen and (min-width: 1200px) {
