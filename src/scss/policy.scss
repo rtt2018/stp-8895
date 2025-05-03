@@ -13,6 +13,9 @@
 
 .policy-container {
   padding: 48px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .policy-title {
@@ -24,4 +27,36 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.policy-content-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+article.policy-container p,
+article.policy-container li {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #24292e;
+}
+
+article.policy-container h2 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #24292e;
+}
+
+.bold-text {
+  font-weight: 600;
+}
+
+.policy-link {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
 }
