@@ -2,9 +2,13 @@
   padding-top: 48px;
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 157%;
   color: #1873cd;
+  @include font(14, 22);
+
+  @include media(desktop) {
+    @include font(18, 26);
+    padding-top: 100px;
+  }
 }
 
 .policy-nav:active {
@@ -14,22 +18,26 @@
 .policy-back-link {
   display: flex;
   align-items: center;
-  gap: 8px; /* Відступ між іконкою та текстом */
+  gap: 8px;
   text-decoration: none;
-  color: black;
 }
 
 .policy-back-icon {
-  width: 16px; /* Або будь-який інший розмір */
+  width: 16px;
   height: 16px;
-  fill: currentColor; /* Колір SVG як у тексту */
+  fill: currentColor;
 }
 
 .policy-container {
-  padding: 48px 16px;
+  padding: 32px 16px 48px 16px;
   display: flex;
   flex-direction: column;
   gap: 24px;
+
+  @include media(desktop) {
+    padding: 60px 72px 80px 72px;
+    gap: 40px;
+  }
 }
 
 .policy-title {
@@ -41,6 +49,9 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  @include media(desktop) {
+    @include font(40, 55);
+  }
 }
 
 .policy-content-wrap {
@@ -56,6 +67,10 @@ article.policy-container li {
   font-size: 14px;
   line-height: 1.57;
   color: #24292e;
+
+  @include media(desktop) {
+    @include font(18, 26);
+  }
 }
 
 article.policy-container h2 {
@@ -64,6 +79,10 @@ article.policy-container h2 {
   font-size: 14px;
   line-height: 1.57;
   color: #24292e;
+
+  @include media(desktop) {
+    @include font(18, 26);
+  }
 }
 
 .bold-text {

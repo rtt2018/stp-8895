@@ -8,7 +8,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  @media screen and (min-width: $desktop) {
+  @include media(desktop) {
     font-family: 'Nunito', sans-serif;
     font-weight: 900;
     font-size: 40px;
@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  @media screen and (min-width: $desktop) {
+  @include media(desktop) {
     gap: 24px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -36,7 +36,7 @@
   padding: 8px 16px;
   border-radius: 15px;
   background: #fff;
-  @media screen and (min-width: $desktop) {
+  @include media(desktop) {
     gap: 16px;
     border-radius: 20px;
     padding: 16px;
@@ -50,7 +50,7 @@
   align-self: flex-start;
   align-items: center;
   gap: 8px;
-  @media screen and (min-width: $desktop) {
+  @include media(desktop) {
     flex-direction: column;
   }
 }
