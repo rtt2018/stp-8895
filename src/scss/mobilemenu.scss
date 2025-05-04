@@ -24,7 +24,13 @@ div[data-action='isClose'] {
   backdrop-filter: blur(12px);
   box-shadow: 0 6px 12px 0 rgba(151, 151, 151, 0.2);
   background: rgba(255, 255, 255, 0.7);
+  // transform: translateX(-100%);
+  // transition: transform 0.3 ease-in;
 }
+
+// div[data-action='isOpen'] > .modal-wrapper {
+//   transform: translateX(0);
+// }
 
 .close-menu-button {
   display: flex;
@@ -35,6 +41,25 @@ div[data-action='isClose'] {
   background-color: transparent;
   width: 32px;
   height: 32px;
+  margin-left: auto;
+  margin-bottom: 16px;
+}
+
+.close-menu-button-icon {
+}
+
+.modal-nav-link {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  color: #545454;
+}
+
+.modal-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 @media only screen and (min-width: 1200px) {

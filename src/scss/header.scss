@@ -29,6 +29,11 @@
   height: 32px;
 }
 
+.burger-menu-button-icon {
+  padding: 0;
+  fill: #1e1e1e;
+}
+
 .nav {
   display: none;
 }
@@ -37,10 +42,6 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
-}
-
-.modal-window {
-  display: block;
 }
 
 @media only screen and (min-width: 1200px) {
