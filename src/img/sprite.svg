@@ -218,6 +218,7 @@
         opacity=".5"
         style="stroke: var(--color1, #1e1e1e)"
       />
+      >>>>>>> 2092f05d5757a8699e4d4f15027747f84e17a5ce
     </symbol>
   </defs>
 </svg>

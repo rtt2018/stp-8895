@@ -24,7 +24,13 @@ div[data-action='isClose'] {
   backdrop-filter: blur(12px);
   box-shadow: 0 6px 12px 0 rgba(151, 151, 151, 0.2);
   background: rgba(255, 255, 255, 0.7);
+  // transform: translateX(-100%);
+  // transition: transform 0.3 ease-in;
 }
+
+// div[data-action='isOpen'] > .modal-wrapper {
+//   transform: translateX(0);
+// }
 
 .close-menu-button {
   display: flex;

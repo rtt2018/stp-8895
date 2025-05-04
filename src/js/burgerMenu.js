@@ -8,5 +8,4 @@ openBtnEl.addEventListener('click', e => {
 
 closeBtnEl.addEventListener('click', e => {
     burgerMenuEl.dataset.action = 'isClose';
-
 });
