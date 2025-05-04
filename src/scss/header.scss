@@ -93,6 +93,7 @@ a[data-visibility='false']::before {
     font-size: 20px;
     line-height: 140%;
     padding: 26px 0;
+    transition: color 0.3s ease-in;
   }
 
   .header-nav-link:hover,
