@@ -1,6 +1,17 @@
 <header class="section header">
   <div class="container header-container" data-type="header-container">
     <div class="wrapper">
+      <button
+        class="burger-menu-button"
+        type="button"
+        data-class="burger-btn"
+        data-action="open"
+        aria-label="Open mobile menu"
+      >
+        <svg class="icon-logo" width="16" height="16">
+          <use href="img/sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
       <a href="index.html">
         <picture>
           <source
@@ -13,9 +24,6 @@
         </picture>
       </a>
       <nav class="nav">
-        <button type="button" data-class="burger-btn" data-action="open">
-          Burger menu
-        </button>
         <ul class="nav-links">
           <li><a data-class="header-nav-link" href="index.html">Home</a></li>
           <li><a data-class="header-nav-link" href="#benefits">Benefits</a></li>
@@ -31,31 +39,6 @@
           <li><a data-class="header-nav-link" href="#gallery">Gallery</a></li>
         </ul>
       </nav>
-    </div>
-    <div data-class="modal-window">
-      <div data-class="modal-wrapper">
-        <nav data-class="modal-nav">
-          <ul>
-            <li><a data-class="header-nav-link" href="index.html">Home</a></li>
-            <li>
-              <a data-class="header-nav-link" href="#benefits">Benefits</a>
-            </li>
-            <li>
-              <a data-class="header-nav-link" href="#feature">Feature Keys</a>
-            </li>
-            <li>
-              <a data-class="header-nav-link" href="#about">About This Game</a>
-            </li>
-            <li>
-              <a data-class="header-nav-link" href="#howto">How to Play</a>
-            </li>
-            <li><a data-class="header-nav-link" href="#faq">FAQ</a></li>
-            <li><a data-class="header-nav-link" href="#reviews">Reviews</a></li>
-            <li><a data-class="header-nav-link" href="#gallery">Gallery</a></li>
-          </ul>
-        </nav>
-      </div>
-      <button type="button" class="btn-close" data-action="close">svg</button>
     </div>
   </div>
 </header>
