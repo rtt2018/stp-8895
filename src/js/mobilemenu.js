@@ -4,8 +4,11 @@ const burgerMenuEl = document.querySelector('[data-type="mobile-menu-overlay"]')
 
 openBtnEl.addEventListener('click', e => {
     burgerMenuEl.dataset.action = 'isOpen';
+    document.documentElement.dataset.scrollLock = true;
+
 });
 
 closeBtnEl.addEventListener('click', e => {
     burgerMenuEl.dataset.action = 'isClose';
+    document.documentElement.dataset.scrollLock = false;
 });
