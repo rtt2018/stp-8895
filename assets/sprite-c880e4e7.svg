@@ -56,8 +56,8 @@
     <symbol id="icon-gamepad" viewBox="0 0 32 32">
       <path
         fill="none"
-        stroke="#1e1e1e"
-        style="stroke: var(--color1, #1e1e1e)"
+        stroke="#d10003"
+        style="stroke: var(--color1, #d10003)"
         stroke-linejoin="miter"
         stroke-linecap="round"
         stroke-miterlimit="4"
@@ -67,8 +67,8 @@
       <path
         fill="none"
         opacity="0.5"
-        stroke="#1e1e1e"
-        style="stroke: var(--color1, #1e1e1e)"
+        stroke="#d10003"
+        style="stroke: var(--color1, #d10003)"
         stroke-linejoin="miter"
         stroke-linecap="round"
         stroke-miterlimit="4"
@@ -77,8 +77,8 @@
       ></path>
       <path
         fill="none"
-        stroke="#1e1e1e"
-        style="stroke: var(--color1, #1e1e1e)"
+        stroke="#d10003"
+        style="stroke: var(--color1, #d10003)"
         stroke-linejoin="miter"
         stroke-linecap="round"
         stroke-miterlimit="4"
@@ -88,8 +88,8 @@
       <path
         fill="none"
         opacity="0.5"
-        stroke="#1e1e1e"
-        style="stroke: var(--color1, #1e1e1e)"
+        stroke="#d10003"
+        style="stroke: var(--color1, #d10003)"
         stroke-linejoin="miter"
         stroke-linecap="round"
         stroke-miterlimit="4"
@@ -104,8 +104,8 @@
       <path
         fill="none"
         opacity="0.5"
-        stroke="#1e1e1e"
-        style="stroke: var(--color1, #1e1e1e)"
+        stroke="#d10003"
+        style="stroke: var(--color1, #d10003)"
         stroke-linejoin="miter"
         stroke-linecap="butt"
         stroke-miterlimit="4"
@@ -114,8 +114,8 @@
       ></path>
       <path
         fill="none"
-        stroke="#1e1e1e"
-        style="stroke: var(--color1, #1e1e1e)"
+        stroke="#d10003"
+        style="stroke: var(--color1, #d10003)"
         stroke-linejoin="miter"
         stroke-linecap="butt"
         stroke-miterlimit="4"
@@ -125,8 +125,8 @@
       <path
         fill="none"
         opacity="0.5"
-        stroke="#1e1e1e"
-        style="stroke: var(--color1, #1e1e1e)"
+        stroke="#d10003"
+        style="stroke: var(--color1, #d10003)"
         stroke-linejoin="miter"
         stroke-linecap="round"
         stroke-miterlimit="4"
@@ -137,8 +137,8 @@
     <symbol id="icon-improvement" viewBox="0 0 32 32">
       <path
         fill="none"
-        stroke="#1e1e1e"
-        style="stroke: var(--color1, #1e1e1e)"
+        stroke="#d10003"
+        style="stroke: var(--color1, #d10003)"
         stroke-linejoin="miter"
         stroke-linecap="butt"
         stroke-miterlimit="4"
@@ -148,8 +148,8 @@
       <path
         fill="none"
         opacity="0.5"
-        stroke="#1e1e1e"
-        style="stroke: var(--color1, #1e1e1e)"
+        stroke="#d10003"
+        style="stroke: var(--color1, #d10003)"
         stroke-linejoin="miter"
         stroke-linecap="round"
         stroke-miterlimit="4"
@@ -166,8 +166,8 @@
       <path
         fill="none"
         opacity="0.5"
-        stroke="#1e1e1e"
-        style="stroke: var(--color1, #1e1e1e)"
+        stroke="#d10003"
+        style="stroke: var(--color1, #d10003)"
         stroke-linejoin="miter"
         stroke-linecap="butt"
         stroke-miterlimit="4"
@@ -176,8 +176,8 @@
       ></path>
       <path
         fill="none"
-        stroke="#1e1e1e"
-        style="stroke: var(--color1, #1e1e1e)"
+        stroke="#d10003"
+        style="stroke: var(--color1, #d10003)"
         stroke-linejoin="miter"
         stroke-linecap="butt"
         stroke-miterlimit="4"
@@ -193,8 +193,8 @@
     <symbol id="icon-relaxation" viewBox="0 0 32 32">
       <path
         fill="none"
-        stroke="#1e1e1e"
-        style="stroke: var(--color1, #1e1e1e)"
+        stroke="#d10003"
+        style="stroke: var(--color1, #d10003)"
         stroke-linejoin="miter"
         stroke-linecap="butt"
         stroke-miterlimit="4"
@@ -204,8 +204,8 @@
       <path
         fill="none"
         opacity="0.5"
-        stroke="#1e1e1e"
-        style="stroke: var(--color1, #1e1e1e)"
+        stroke="#d10003"
+        style="stroke: var(--color1, #d10003)"
         stroke-linejoin="miter"
         stroke-linecap="butt"
         stroke-miterlimit="4"
@@ -214,8 +214,8 @@
       ></path>
       <path
         fill="none"
-        stroke="#1e1e1e"
-        style="stroke: var(--color1, #1e1e1e)"
+        stroke="#d10003"
+        style="stroke: var(--color1, #d10003)"
         stroke-linejoin="miter"
         stroke-linecap="round"
         stroke-miterlimit="4"
@@ -225,8 +225,8 @@
       <path
         fill="none"
         opacity="0.5"
-        stroke="#1e1e1e"
-        style="stroke: var(--color1, #1e1e1e)"
+        stroke="#d10003"
+        style="stroke: var(--color1, #d10003)"
         stroke-linejoin="miter"
         stroke-linecap="round"
         stroke-miterlimit="4"
@@ -252,8 +252,8 @@
     <symbol id="icon-visualization" viewBox="0 0 32 32">
       <path
         fill="none"
-        stroke="#1e1e1e"
-        style="stroke: var(--color1, #1e1e1e)"
+        stroke="#d10003"
+        style="stroke: var(--color1, #d10003)"
         stroke-linejoin="miter"
         stroke-linecap="butt"
         stroke-miterlimit="4"
@@ -263,8 +263,8 @@
       <path
         fill="none"
         opacity="0.5"
-        stroke="#1e1e1e"
-        style="stroke: var(--color1, #1e1e1e)"
+        stroke="#d10003"
+        style="stroke: var(--color1, #d10003)"
         stroke-linejoin="miter"
         stroke-linecap="butt"
         stroke-miterlimit="4"
@@ -274,8 +274,8 @@
       <path
         fill="none"
         opacity="0.5"
-        stroke="#1e1e1e"
-        style="stroke: var(--color1, #1e1e1e)"
+        stroke="#d10003"
+        style="stroke: var(--color1, #d10003)"
         stroke-linejoin="miter"
         stroke-linecap="butt"
         stroke-miterlimit="4"
@@ -285,8 +285,8 @@
       <path
         fill="none"
         opacity="0.5"
-        stroke="#1e1e1e"
-        style="stroke: var(--color1, #1e1e1e)"
+        stroke="#d10003"
+        style="stroke: var(--color1, #d10003)"
         stroke-linejoin="miter"
         stroke-linecap="butt"
         stroke-miterlimit="4"
