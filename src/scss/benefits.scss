@@ -8,22 +8,41 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  @media screen and (min-width: $desktop) {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: -0.02em;
+  }
 }
 
 .benefits-list {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  @media screen and (min-width: $desktop) {
+    gap: 24px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .benefit-card {
   display: flex;
   align-items: center;
   flex-direction: column;
+
   gap: 8px;
   padding: 8px 16px;
   border-radius: 15px;
   background: #fff;
+  @media screen and (min-width: $desktop) {
+    gap: 16px;
+    border-radius: 20px;
+    padding: 16px;
+    width: 336px;
+    height: 227px;
+  }
 }
 
 .benefit-header {
@@ -31,6 +50,9 @@
   align-self: flex-start;
   align-items: center;
   gap: 8px;
+  @media screen and (min-width: $desktop) {
+    flex-direction: column;
+  }
 }
 
 .benefits-icon {

@@ -11,6 +11,20 @@
   color: #0e4376;
 }
 
+.policy-back-link {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Відступ між іконкою та текстом */
+  text-decoration: none;
+  color: black;
+}
+
+.policy-back-icon {
+  width: 16px; /* Або будь-який інший розмір */
+  height: 16px;
+  fill: currentColor; /* Колір SVG як у тексту */
+}
+
 .policy-container {
   padding: 48px 16px;
   display: flex;
