@@ -35,6 +35,25 @@ div[data-action='isClose'] {
   background-color: transparent;
   width: 32px;
   height: 32px;
+  margin-left: auto;
+  margin-bottom: 16px;
+}
+
+.close-menu-button-icon {
+}
+
+.modal-nav-link {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  color: #545454;
+}
+
+.modal-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 @media only screen and (min-width: 1200px) {
