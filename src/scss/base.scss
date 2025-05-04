@@ -49,3 +49,24 @@ main > section {
     gap: 80px;
   }
 }
+
+h1 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+
+  @mixin media($desktop) {
+    font-size: 40px;
+  }
+}
+
+h2 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+
+  @mixin media($desktop) {
+    font-size: 20px;
+  }
+}
