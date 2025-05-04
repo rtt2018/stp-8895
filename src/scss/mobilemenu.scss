@@ -18,7 +18,8 @@ div[data-action='isClose'] {
 
 .modal-wrapper {
   padding: 24px;
-  width: 254px;
+  padding-left: calc(((100vw - 320px) / 2) + 24px);
+  width: calc(((100vw - 320px) / 2) + 254px);
   height: 100vh;
   backdrop-filter: blur(12px);
   box-shadow: 0 6px 12px 0 rgba(151, 151, 151, 0.2);
