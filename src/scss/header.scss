@@ -31,6 +31,7 @@ a[data-visibility='false']::before {
 
 .header {
   position: fixed;
+  z-index: 999;
   width: 100vw;
   height: 48px;
   backdrop-filter: blur(12px);
@@ -62,7 +63,7 @@ a[data-visibility='false']::before {
 
 .burger-menu-button-icon {
   padding: 0;
-  fill: #1e1e1e;
+  fill: $_other-elements-color;
 }
 
 .thumb {
