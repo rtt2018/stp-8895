@@ -50,6 +50,11 @@
   padding: 8px 92px;
   gap: 8px;
   margin-bottom: 84px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.hero-playmarket-button:active {
+  transform: scale(0.94);
 }
 
 .market-wrapper {
@@ -122,5 +127,16 @@
 
   .hero-playmarket-button {
     margin: 0;
+    width: 246px;
+    padding: 8px 72px;
+  }
+
+  .hero-playmarket-button:focus-visible,
+  .hero-playmarket-button:hover {
+    transform: scale(1.04);
+  }
+
+  .hero-playmarket-button:active {
+    transform: scale(0.94);
   }
 }
