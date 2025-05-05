@@ -12,31 +12,37 @@
           <use href="img/sprite.svg#icon-menu"></use>
         </svg>
       </button>
-      <a href="index.html">
-        <picture>
-          <source
-            srcset="
-              /img/header/logo-header@1x.jpg 1x,
-              /img/header/logo-header@2x.jpg 2x
-            "
-          />
-          <img src="/img/header/logo-header@1x.jpg" alt="planer logo" />
-        </picture>
-      </a>
+      <div class="thumb">
+        <a href="index.html" class="logo-picture">
+          <picture>
+            <source
+              srcset="
+                /img/header/logo-header@1x.jpg 1x,
+                /img/header/logo-header@2x.jpg 2x
+              "
+            />
+            <img src="/img/header/logo-header@1x.jpg" alt="planer logo" />
+          </picture>
+        </a>
+      </div>
       <nav class="nav">
         <ul class="nav-links">
-          <li><a data-class="header-nav-link" href="index.html">Home</a></li>
-          <li><a data-class="header-nav-link" href="#benefits">Benefits</a></li>
           <li>
-            <a data-class="header-nav-link" href="#feature">Feature Keys</a>
+            <a class="header-nav-link" data-visibility="true" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li><a class="header-nav-link" href="#benefits">Benefits</a></li>
+          <li>
+            <a class="header-nav-link" href="#feature">Feature Keys</a>
           </li>
           <li>
-            <a data-class="header-nav-link" href="#about">About This Game</a>
+            <a class="header-nav-link" href="#about">About This Game</a>
           </li>
-          <li><a data-class="header-nav-link" href="#howto">How to Play</a></li>
-          <li><a data-class="header-nav-link" href="#faq">FAQ</a></li>
-          <li><a data-class="header-nav-link" href="#reviews">Reviews</a></li>
-          <li><a data-class="header-nav-link" href="#gallery">Gallery</a></li>
+          <li><a class="header-nav-link" href="#howto">How to Play</a></li>
+          <li><a class="header-nav-link" href="#faq">FAQ</a></li>
+          <li><a class="header-nav-link" href="#reviews">Reviews</a></li>
+          <li><a class="header-nav-link" href="#gallery">Gallery</a></li>
         </ul>
       </nav>
     </div>

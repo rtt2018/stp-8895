@@ -1,3 +1,7 @@
+html[data-scroll-lock='true'] {
+  overflow: hidden;
+}
+
 .modal-window {
   display: flex;
   position: fixed;
@@ -6,14 +10,22 @@
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.25);
-}
 
-div[data-action='isOpen'] {
-  display: block;
+  transition: 0.5s ease-in;
+  transition-property: opacity;
 }
 
 div[data-action='isClose'] {
-  display: none;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.modal-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s ease-in;
+  transition-property: transform;
 }
 
 .modal-wrapper {
@@ -25,12 +37,11 @@ div[data-action='isClose'] {
   box-shadow: 0 6px 12px 0 rgba(151, 151, 151, 0.2);
   background: rgba(255, 255, 255, 0.7);
   // transform: translateX(-100%);
-  // transition: transform 0.3 ease-in;
 }
 
-// div[data-action='isOpen'] > .modal-wrapper {
-//   transform: translateX(0);
-// }
+div[data-action='isClose'] > .modal-wrapper {
+  transform: translateX(-100%);
+}
 
 .close-menu-button {
   display: flex;
