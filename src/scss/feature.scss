@@ -1,0 +1,93 @@
+.feature-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.feature-title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  @include font(24, 33);
+
+  background: linear-gradient(180deg, #145ca4 42.79%, #2597f3 74.04%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @include media(desktop) {
+    @include font(40, 55);
+  }
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-self: stretch;
+  gap: 8px;
+
+  border-radius: 15px;
+  padding: 16px;
+  width: 288px;
+  background: #fff;
+
+  @include media(desktop) {
+    border-radius: 20px;
+    width: 336px;
+  }
+}
+
+.feature-img {
+  border-radius: 15px;
+  width: 256px;
+  height: 155px;
+  object-fit: cover;
+
+  @include media(desktop) {
+    border-radius: 20px;
+    width: 304px;
+    height: 215px;
+  }
+}
+
+.feature-img:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
+}
+
+.feature-item-title {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  @include font(16, 19);
+  text-align: center;
+  color: #1c1c1c;
+
+  @include media(desktop) {
+    @include font(20, 23);
+  }
+}
+
+.feature-text {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  @include font(14, 22);
+  color: #24292e;
+
+  @include media(desktop) {
+    @include font(18, 26);
+  }
+}
