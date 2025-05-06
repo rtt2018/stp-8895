@@ -63,29 +63,15 @@
   padding: 0;
 }
 
-.faq-list-item[data-is-open] .faq-spoiler-button img {
+.faq-list-item[data-is-open] .faq-spoiler-button .faq-spoiler-arrow {
   transition: transform 0.5s ease-in-out;
 }
 
-.faq-list-item[data-is-open='true'] .faq-spoiler-button img {
+.faq-list-item[data-is-open='true'] .faq-spoiler-button .faq-spoiler-arrow {
   transform: rotate(-90deg);
 }
 
-.faq-spoiler-icon {
-  stroke-width: 2px;
-  stroke: #545454;
-}
-
 .faq-spoiler-arrow {
-  width: 24px;
-  height: 24px;
-  color: #24292e;
-  fill: currentColor;
-  stroke: currentColor;
-}
-
-.faq-button-picture {
-  display: block;
   width: 24px;
   height: 24px;
 }
@@ -119,6 +105,7 @@
   }
 
   .faq-wrapper {
+    padding-top: 4px;
     margin-right: 12px;
   }
 
@@ -127,12 +114,7 @@
     height: 32px;
   }
 
-  .faq-spoiler-img {
-    stroke-width: 2px;
-    stroke: #545454;
-  }
-
-  .faq-button-picture {
+  .faq-spoiler-arrow {
     width: 32px;
     height: 32px;
   }
