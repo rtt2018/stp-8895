@@ -1,3 +1,21 @@
+.reviews-container {
+  @include retina-background(
+    '../img/reviews/bg@1x.png',
+    '../img/reviews/bg@2x.png',
+    no-repeat,
+    top
+  );
+
+  @include media(desktop) {
+    @include retina-background(
+      '../img/reviews/bg-desktop@1x.png',
+      '../img/reviews/bg-desktop@1x.png',
+      no-repeat,
+      top
+    );
+  }
+}
+
 .reviews-head {
   font-family: 'Nunito', sans-serif;
   font-weight: 900;
@@ -16,14 +34,64 @@
 .reviews-slide-item {
 }
 
+.rewiew-slide-wrapper {
+  padding-top: 72px;
+}
+
 .slider-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  padding: 96px 16px 8px;
+  border-radius: 15px;
+  width: 288px;
+  height: 200px;
+  background: #fff;
+}
+
+.rewiew-avatar-thumb {
+  position: absolute;
+  top: -72px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 115px;
+  height: 160px;
 }
 
 .review-avatar {
+  display: block;
+  width: 115px;
+  height: 160px;
+}
+
+.review-avatar-img {
+}
+
+.reviews-name-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
 }
 
 .review-name {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #1873cd;
+}
+
+.reviews-quote-icon {
+  width: 17px;
+  height: 17px;
+  fill: #d10003;
 }
 
 .review-description {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #24292e;
 }
