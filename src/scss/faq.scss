@@ -64,7 +64,7 @@
 }
 
 .faq-list-item[data-is-open] .faq-spoiler-button img {
-  transition: transform 0.5s linear;
+  transition: transform 0.8s ease-in-out;
 }
 
 .faq-list-item[data-is-open='true'] .faq-spoiler-button img {
