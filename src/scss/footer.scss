@@ -4,7 +4,10 @@
 
   @include retina-background(
     '../img/footer/footer-bg@1x.png',
-    '../img/footer/footer-bg@2x.png'
+    '../img/footer/footer-bg@2x.png',
+    no-repeat,
+    center,
+    contain
   );
 
   @include media(desktop) {
