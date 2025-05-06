@@ -4,7 +4,7 @@ spoilerList.addEventListener('click', openSpoiler);
 function openSpoiler(event) {
     const tagName = event.target.tagName;
     console.log("🚀 ~ openSpoiler ~ tagName:", tagName)
-    if (tagName === 'BUTTON' || tagName === 'svg' || tagName === 'use') {
+    if (tagName === 'BUTTON' || tagName === 'PICTURE' || tagName === 'IMG') {
         const listItem = event.target.closest('li');
         const isOpenSpoiler = listItem.dataset.isOpen === "true";
         listItem.dataset.isOpen = String(!isOpenSpoiler);
