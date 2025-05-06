@@ -1,0 +1,111 @@
+.about {
+  @include retina-background(
+    '../img/about/about-bg@1x.png',
+    './img/about/about-bg@2x.png',
+    no-repeat,
+    top
+  );
+
+  @include media(desktop) {
+    @include retina-background(
+      './img/about/about-bg-desktop@1x.png',
+      './img/about/about-bg-desktop@2x.png',
+      no-repeat,
+      top
+    );
+  }
+}
+
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 64px;
+  @include media(desktop) {
+    padding: 104px 142px 40px 142px;
+    gap: 40px;
+  }
+}
+
+.about-title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  @include font(24, 33);
+
+  background: linear-gradient(180deg, #145ca4 42.79%, #2597f3 74.04%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @include media(desktop) {
+    @include font(40, 55);
+  }
+}
+
+.about-description {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  color: #24292e;
+  @include font(14, 22);
+}
+
+.about-image-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px 16px;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 30px;
+  }
+}
+
+.about-image-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  height: 190px;
+  @include media(desktop) {
+    border-radius: 20px;
+    width: 200px;
+    height: 280px;
+  }
+}
+
+.about-image-list li {
+  &:nth-child(1) {
+    transform: rotate(7deg);
+    transform-origin: right bottom;
+    background-color: #ffe5d3;
+  }
+  &:nth-child(2) {
+    transform: rotate(-7deg);
+    transform-origin: left bottom;
+    background-color: #d4edda;
+  }
+  &:nth-child(3) {
+    transform: rotate(-7deg);
+    transform-origin: right top;
+    background-color: #ffcccb;
+  }
+  &:nth-child(4) {
+    transform: rotate(7deg);
+    transform-origin: left top;
+    background-color: #f3e5f5;
+  }
+}
+
+.about-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
