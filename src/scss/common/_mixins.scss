@@ -34,7 +34,7 @@
     background-position: $position;
   }
   @if $size {
-    background-size: size;
+    background-size: $size;
   }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2),
