@@ -34,7 +34,7 @@
 .faq-ansver-wrapper {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.8s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
 }
 
 .faq-answer {
@@ -64,7 +64,7 @@
 }
 
 .faq-list-item[data-is-open] .faq-spoiler-button img {
-  transition: transform 0.8s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .faq-list-item[data-is-open='true'] .faq-spoiler-button img {
@@ -74,6 +74,14 @@
 .faq-spoiler-icon {
   stroke-width: 2px;
   stroke: #545454;
+}
+
+.faq-spoiler-arrow {
+  width: 24px;
+  height: 24px;
+  color: #24292e;
+  fill: currentColor;
+  stroke: currentColor;
 }
 
 .faq-button-picture {
