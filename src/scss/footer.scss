@@ -1,19 +1,22 @@
 .footer {
-  background: url('../img/footer/footer-bg@1x.png') no-repeat center center /
-    contain;
-  @media only screen and (-webkit-min-device-pixel-ratio: 2),
-    only screen and (min-resolution: 192dpi),
-    only screen and (min-resolution: 2dppx) {
-    background-image: url('../img/footer/footer-bg@2x.png');
-  }
   margin: 0 auto;
   height: 226px;
 
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.57;
-  color: #000;
+  @include retina-background(
+    '../img/footer/footer-bg@1x.png',
+    '../img/footer/footer-bg@2x.png'
+  );
+
+  @include media(desktop) {
+    height: 332px;
+    @include retina-background(
+      '../img/footer/footer-bg-desktop@1x.png',
+      '../img/footer/footer-bg-desktop@2x.png',
+      no-repeat,
+      center,
+      contain
+    );
+  }
 }
 
 .footer-container {
@@ -21,6 +24,11 @@
   align-items: center;
   flex-direction: column;
   padding: 56px 16px 16px 16px;
+
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  color: #1c1c1c;
+  @include font(14, 22);
 }
 
 .footer-list {
@@ -29,14 +37,6 @@
   align-items: center;
   margin-bottom: 24px;
   gap: 8px;
-}
-
-.footer-item {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.57;
-  color: #1c1c1c;
 }
 
 .footer-link {
@@ -48,28 +48,8 @@
   text-decoration: underline;
 }
 
-.footer-text {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.57;
-  color: #1c1c1c;
-}
-
 /* desktop */
 @include media(desktop) {
-  .footer {
-    width: 1200px;
-    height: 332px;
-
-    background-image: url('../img/footer/footer-bg-desktop@1x.png');
-    @media only screen and (-webkit-min-device-pixel-ratio: 2),
-      only screen and (min-resolution: 192dpi),
-      only screen and (min-resolution: 2dppx) {
-      background-image: url('../img/footer/footer-bg-desktop@2x.png');
-    }
-  }
-
   .footer-container {
     padding: 192px 72px 24px 72px;
   }
@@ -81,8 +61,7 @@
   }
 
   .footer-item {
-    font-size: 20px;
-    line-height: 1.4;
+    @include font(20, 28);
     position: relative;
   }
 
@@ -102,7 +81,6 @@
   }
 
   .footer-text {
-    font-size: 18px;
-    line-height: 1.44;
+    @include font(18, 26);
   }
 }

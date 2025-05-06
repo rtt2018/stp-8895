@@ -1,15 +1,15 @@
 .about {
   @include retina-background(
     '../img/about/about-bg@1x.png',
-    './img/about/about-bg@2x.png',
+    '../img/about/about-bg@2x.png',
     no-repeat,
     top
   );
 
   @include media(desktop) {
     @include retina-background(
-      './img/about/about-bg-desktop@1x.png',
-      './img/about/about-bg-desktop@2x.png',
+      '../img/about/about-bg-desktop@1x.png',
+      '../img/about/about-bg-desktop@2x.png',
       no-repeat,
       top
     );
@@ -56,6 +56,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 4px 16px;
+  margin-top: 16px;
   margin-bottom: 16px;
 
   @include media(desktop) {
