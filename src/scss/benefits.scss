@@ -82,7 +82,7 @@
   }
 }
 
-.benefits-item-text {
+.benefits-text {
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
   @include font(14, 22);
@@ -90,6 +90,5 @@
 
   @include media(desktop) {
     @include font(18, 26);
-    text-align: center;
   }
 }
