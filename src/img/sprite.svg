@@ -2,6 +2,11 @@
   style="position: absolute; width: 0; height: 0; overflow: hidden">
   <defs>
 
+    <symbol id="icon-arow" viewBox="0 0 48 49">
+      <path fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        d="M18 10.2734L30 24.2734L18 38.2734" />
+    </symbol>
+
     <symbol id="icon-back" viewBox="0 0 24 24">
       <path fill="none" stroke="#1873CD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
         d="M15 5L9 12L15 19" />
@@ -13,7 +18,6 @@
         opacity=".5" />
       <path fill="none" stroke-linecap="round" stroke-width="2" d="m19.334 12.667-6.667 6.667m0-6.667 6.667 6.667" />
     </symbol>
-
 
     <symbol id="icon-down-arrow" viewBox="0 0 32 32">
       <path fill="#545454" opacity="0.5"
