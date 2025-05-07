@@ -50,14 +50,6 @@
   @include font(14, 22);
   @include media(desktop) {
     display: none;
-    @include font(14, 22);
-  }
-}
-
-.about-description__part1,
-.about-description__part2 {
-  @include media(desktop) {
-    display: none;
   }
 }
 
@@ -67,7 +59,7 @@
     display: block;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    color: #000;
+
     @include font(20, 28);
   }
 }
