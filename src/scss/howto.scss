@@ -35,9 +35,6 @@
 }
 
 .howto-list-item {
-  //   display: flex;
-  //   flex-direction: column;
-  //   gap: 8px;
   position: relative;
 }
 
@@ -60,7 +57,6 @@
 }
 
 .howto-planer-picture {
-  //   position: absolute;
   display: block;
   margin: 0 0 8px auto;
   width: 224px;
@@ -76,7 +72,6 @@
   border-radius: 10px;
   padding: 8px 16px;
   width: 288px;
-  //   height: 87px;
   background: #fff;
 }
 
@@ -90,7 +85,6 @@
   }
 
   .howto-planer-picture {
-    //   position: absolute;
     margin: 0 0 8px auto;
     width: 340px;
     height: 85px;
@@ -111,14 +105,12 @@
   }
 
   .howto-desc-container {
-    // display: flex;
     width: fit-content;
     padding: 16px 16px 12px 16px;
   }
 
   .howto-list-item {
     display: flex;
-    // flex-direction: row-reverse;
     gap: 8px;
   }
 

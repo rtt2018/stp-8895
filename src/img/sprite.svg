@@ -86,5 +86,10 @@
         d="M23.334 17.333a2 2 0 1 0 .001-3.999 2 2 0 0 0-.001 3.999zM8.667 17.333a2 2 0 1 0 .001-3.999 2 2 0 0 0-.001 3.999zM14.667 9.333a2 2 0 1 1-4.001-.001 2 2 0 0 1 4.001.001zm6.667 0a2 2 0 1 1-4.001-.001 2 2 0 0 1 4.001.001z"
         opacity=".5" />
     </symbol>
+
+    <symbol id="icon-swipe" viewBox="0 0 14 31">
+       <path stroke="#24292E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  d="M13 1.27344L1 15.2734L13 29.2734"/>
+    </symbol>
+
   </defs>
 </svg>
