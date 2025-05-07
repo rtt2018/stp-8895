@@ -92,9 +92,5 @@
         opacity=".5" />
     </symbol>
 
-    <symbol id="icon-swipe" viewBox="0 0 14 31">
-       <path stroke="#24292E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  d="M13 1.27344L1 15.2734L13 29.2734"/>
-    </symbol>
-
   </defs>
 </svg>
