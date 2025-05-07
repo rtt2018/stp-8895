@@ -1,0 +1,254 @@
+.reviews-container {
+  @include retina-background(
+    '../img/reviews/bg@1x.png',
+    '../img/reviews/bg@2x.png',
+    no-repeat,
+    bottom
+  );
+  background-position: center top;
+  background-size: auto 100%;
+  overflow: hidden;
+  padding: 16px 16px 72px 16px;
+
+  @include media(desktop) {
+    @include retina-background(
+      '../img/reviews/bg-desktop@1x.png',
+      '../img/reviews/bg-desktop@1x.png',
+      no-repeat,
+      top
+    );
+  }
+}
+
+.reviews-head {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  background: linear-gradient(180deg, #145ca4 42.79%, #2597f3 74.04%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 24px;
+}
+
+.review-swiper-container {
+  overflow: hidden;
+}
+
+.reviews-list {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.reviews-slide-item {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.rewiew-slide-wrapper {
+  padding-top: 72px;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  padding: 96px 16px 8px;
+  border-radius: 16px;
+  width: 288px;
+  min-height: 200px;
+  background: #fff;
+}
+
+.rewiew-avatar-thumb {
+  position: absolute;
+  bottom: 112px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 115px;
+  height: 160px;
+}
+
+.review-avatar {
+  display: block;
+  width: 115px;
+  height: 160px;
+}
+
+.review-avatar-img {
+}
+
+.reviews-name-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.review-name {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #1873cd;
+}
+
+.reviews-quote-icon {
+  width: 16px;
+  height: 16px;
+  fill: #d10003;
+}
+
+.review-description {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #24292e;
+}
+
+[data-swiper-pagination-bullet] {
+  width: 10px;
+  height: 10px;
+  background-color: #c9cccf;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  transition-property: width, background-color;
+}
+
+[data-swiper-pagination-bullet].current {
+  border-radius: 8px;
+  width: 26px;
+  height: 10px;
+  background-color: #d10003;
+}
+
+.reviews-swiper-button-nav {
+  display: none;
+}
+
+[data-swiper-pagination] {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .reviews-container {
+    padding: 72px 72px 194px 72px;
+    position: relative;
+  }
+
+  .reviews-head {
+    font-size: 40px;
+  }
+
+  .reviews-list {
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  .reviews-slide-item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-shrink: 0;
+  }
+
+  .rewiew-slide-wrapper {
+    padding-top: 64px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .slider-container {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    padding: 32px 24px 32px 192px;
+    border-radius: 20px;
+    width: 876px;
+    min-height: 168px;
+  }
+
+  .rewiew-avatar-thumb {
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 144px;
+    height: 200px;
+  }
+
+  .review-avatar {
+    display: block;
+    width: 144px;
+    height: 200px;
+  }
+
+  .review-avatar-img {
+    width: 144px;
+    height: 200px;
+  }
+
+  .reviews-name-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+
+  .review-name {
+    font-size: 24px;
+  }
+
+  .reviews-quote-icon {
+    width: 24px;
+    height: 24px;
+    fill: #d10003;
+  }
+
+  .review-description {
+    font-size: 20px;
+    line-height: 140%;
+  }
+
+  .review-swiper-container {
+    position: relative;
+    width: 876px;
+    margin: 0 auto;
+  }
+
+  [data-swipe-button] {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 168px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+
+  [data-swipe-left] {
+    bottom: 194px;
+    left: 106px;
+  }
+
+  [data-swipe-right] {
+    bottom: 194px;
+    right: 106px;
+  }
+
+  [data-swipe-right] .reviews-swiper-button-icon {
+    transform: rotate(180deg);
+  }
+
+  .reviews-swiper-button-icon {
+    display: block;
+    stroke-width: 2px;
+    stroke: #24292e;
+  }
+}

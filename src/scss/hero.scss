@@ -1,17 +1,23 @@
 .hero-container {
-  padding: 0;
+  position: relative;
   background-image: url('/img/hero/bg@1x.png');
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 100% auto;
+  background-size: 100% 520px;
+  padding-top: 252px;
+  overflow: hidden;
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background-image: url('/img/hero/bg@2x.png');
   }
 }
 
-.hero-picture {
-  margin: -36px 0 -26px 0;
+.hero-picture-thumb {
+  position: absolute;
+  top: -36px;
+  right: 0;
+  width: 320px;
+  height: 320px;
 }
 
 .picture-container {
@@ -21,7 +27,7 @@
 .hero-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 0 16px;
+  // padding: 0 16px;
 }
 
 .hero-head {
@@ -82,20 +88,27 @@
 @media only screen and (min-width: 1200px) {
   .hero-container {
     display: flex;
-    flex-direction: row-reverse;
-    padding: 0;
     background-image: url('/img/hero/bg-desktop@1x.png');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100% 100%;
+    padding-top: 0;
 
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       background-image: url('/img/hero/bg-desktop@2x.png');
     }
   }
 
+  .hero-picture-thumb {
+    position: absolute;
+    top: 0;
+    right: -24px;
+    width: 660px;
+    height: 660px;
+  }
+
   .picture-container {
-    margin: 0 -24px 100px -108px;
+    // margin: 0 -24px 100px -108px;
   }
 
   .hero-picture {
@@ -126,7 +139,7 @@
   }
 
   .hero-playmarket-button {
-    margin: 0;
+    margin: 0 0 212px 0;
     width: 246px;
     padding: 8px 72px;
   }
