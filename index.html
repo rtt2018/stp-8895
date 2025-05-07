@@ -56,7 +56,7 @@
     <script type="module" crossorigin src="/stp-8895/commonHelpers2.js"></script>
     <link rel="modulepreload" crossorigin href="/stp-8895/assets/vendor-0062e853.js">
     <link rel="stylesheet" href="/stp-8895/assets/vendor-fef9b9da.css">
-    <link rel="stylesheet" href="/stp-8895/assets/styles-b627ae93.css">
+    <link rel="stylesheet" href="/stp-8895/assets/styles-d5cb8ba0.css">
   </head>
   <body>
     <header class="section header">
@@ -70,7 +70,7 @@
         aria-label="Open mobile menu"
       >
         <svg class="burger-menu-button-icon" width="32" height="32">
-          <use href="/stp-8895/assets/sprite-92e89aef.svg#icon-menu"></use>
+          <use href="/stp-8895/assets/sprite-eea6f7df.svg#icon-menu"></use>
         </svg>
       </button>
       <div class="thumb">
@@ -117,23 +117,25 @@
       <!-- Loads the specified .html file -->
       <section class="section hero">
   <div class="container hero-container">
-    <picture class="picture-container">
-      <source
-        media="(min-width: 1200px)"
-        srcset="/stp-8895/assets/Plane-desktop@1x-93e7b6d0.png 1x, /stp-8895/assets/Plane-desktop@2x-b6407f0d.png 2x"
-      />
-      <source
-        media="(min-width: 320px) and (max-width: 1199px)"
-        srcset="/stp-8895/assets/Plane@1x-8504d58c.png 1x, /stp-8895/assets/Plane@2x-8c48adc3.png 2x"
-      />
-      <img
-        class="hero-picture"
-        src="/stp-8895/assets/Plane@1x-8504d58c.png"
-        width="320"
-        height="320"
-        alt="Plane image"
-      />
-    </picture>
+    <div class="hero-picture-thumb">
+      <picture class="picture-container">
+        <source
+          media="(min-width: 1200px)"
+          srcset="/stp-8895/assets/Plane-desktop@1x-93e7b6d0.png 1x, /stp-8895/assets/Plane-desktop@2x-b6407f0d.png 2x"
+        />
+        <source
+          media="(min-width: 320px) and (max-width: 1199px)"
+          srcset="/stp-8895/assets/Plane@1x-8504d58c.png 1x, /stp-8895/assets/Plane@2x-8c48adc3.png 2x"
+        />
+        <img
+          class="hero-picture"
+          src="/stp-8895/assets/Plane@1x-8504d58c.png"
+          width="320"
+          height="320"
+          alt="Plane image"
+        />
+      </picture>
+    </div>
     <div class="hero-wrapper">
       <h1 class="hero-head">
         Plane Merge: Idle Merging Game – Build, Merge, and Rule the Skies!
@@ -191,7 +193,7 @@
       <li class="benefit-card">
         <div class="benefit-header">
           <svg class="benefits-icon">
-            <use href="/stp-8895/assets/sprite-92e89aef.svg#icon-gamepad"></use>
+            <use href="/stp-8895/assets/sprite-eea6f7df.svg#icon-gamepad"></use>
           </svg>
           <h2 class="benefits-item-title">Simple Yet Addictive Gameplay</h2>
         </div>
@@ -202,7 +204,7 @@
       <li class="benefit-card">
         <div class="benefit-header">
           <svg class="benefits-icon">
-            <use href="/stp-8895/assets/sprite-92e89aef.svg#icon-improvement"></use>
+            <use href="/stp-8895/assets/sprite-eea6f7df.svg#icon-improvement"></use>
           </svg>
           <h2 class="benefits-item-title">Collect & Upgrade Planes</h2>
         </div>
@@ -213,7 +215,7 @@
       <li class="benefit-card">
         <div class="benefit-header">
           <svg class="benefits-icon" width="30" height="30">
-            <use fill="#d10003" href="/stp-8895/assets/sprite-92e89aef.svg#icon-idle-fun"></use>
+            <use fill="#d10003" href="/stp-8895/assets/sprite-eea6f7df.svg#icon-idle-fun"></use>
           </svg>
           <h2 class="benefits-item-title">Endless Idle Fun</h2>
         </div>
@@ -224,7 +226,7 @@
       <li class="benefit-card">
         <div class="benefit-header">
           <svg class="benefits-icon" width="30" height="30">
-            <use href="/stp-8895/assets/sprite-92e89aef.svg#icon-visualization"></use>
+            <use href="/stp-8895/assets/sprite-eea6f7df.svg#icon-visualization"></use>
           </svg>
           <h2 class="benefits-item-title">Captivating Visuals</h2>
         </div>
@@ -236,7 +238,7 @@
       <li class="benefit-card">
         <div class="benefit-header">
           <svg class="benefits-icon" width="30" height="30">
-            <use href="/stp-8895/assets/sprite-92e89aef.svg#icon-relaxation"></use>
+            <use href="/stp-8895/assets/sprite-eea6f7df.svg#icon-relaxation"></use>
           </svg>
           <h2 class="benefits-item-title">Stress-Free Relaxation</h2>
         </div>
@@ -247,7 +249,7 @@
       <li class="benefit-card">
         <div class="benefit-header">
           <svg class="benefits-icon">
-            <use href="/stp-8895/assets/sprite-92e89aef.svg#icon-play"></use>
+            <use href="/stp-8895/assets/sprite-eea6f7df.svg#icon-play"></use>
           </svg>
           <h2 class="benefits-item-title">Progress at Your Own Pace</h2>
         </div>
@@ -574,19 +576,12 @@
           class="faq-spoiler-button"
           aria-label="Open spoiler button"
         >
-          <picture class="faq-button-picture">
-            <source
-              srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADjSURBVHgB7ZWxEoMgDEADZejIJ7SL+jku7n6aY+9c/By29hMcO6g0GbopgoTWgXfH4ZlwPEkOATKZzJ8RrmDTNK21Vk/T1A3DMEICpCu4LMsVJ62Uauu61vBrgXmeHygxppS4uILGmHdZlgYfKyGEllJWRVEYeg9MCJ8k+nLcvMVBJzD69gT20JPmvu/vWznOEnyhzbAUXWg5sIFvNFw5XgIxEnt4C6SSCBJIIREswC1xSIBT4rAAl0SUAIdEtECsBIvAloTPOjaBNQmfNQoCoLt972oNhfUE1sC/6AsymcyZ+QDY8r1VX+QRaAAAAABJRU5ErkJggg== 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGTSURBVHgB7dkxToRAFMbxB1JYbmlptbH0KDSQ7TyDN1hv4BVsSUgsLT2CJaWlJQcg4PuKTQhZjQ7MzBv9fgmZZbbZ+YcwhBUhIiIiIiKi/ycTR1VVXU3TdMBnHV/atu0kQbk4Gsex1GGHI8uyQ1mWt5Ig5wC66Mv5eVEUZYoRnAMMw/C6nEsxwoU46rruY7/f93me38zncY55fC8JcA4AfyHCqgCQeoTVASDlCM7PAefgBogb4XJeb5jP6k02VNf1nW7Fj7ob9Xocm6Z5EgfOu8A5WCQWu5z3sTvow9dRh52O1wghjjYNAKEiYOGz05042jwAhLwS1vISAFKJ4C0ApBDBawCwHsF7ALAcIUgAsBohWACwGCFoALAWIXgAsBQhSgCwEiFaALAQIWoAiB0hegCIGcFEAIgVwUwAiBHBVAAIHcFcAAgZwWQACBXBbAD4LoJsxHQA+CrCVswHAJ8RCvHk9N5eVryxDcHbFXB6by/G+QwQbPH6z9C7OPIWQC//+zU/7Bd6PR6EiIiIiIiI6Mc+AeMDI3jEaLlHAAAAAElFTkSuQmCC 2x"
-            />
-            <img
-              class="faq-spoiler-img"
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADjSURBVHgB7ZWxEoMgDEADZejIJ7SL+jku7n6aY+9c/By29hMcO6g0GbopgoTWgXfH4ZlwPEkOATKZzJ8RrmDTNK21Vk/T1A3DMEICpCu4LMsVJ62Uauu61vBrgXmeHygxppS4uILGmHdZlgYfKyGEllJWRVEYeg9MCJ8k+nLcvMVBJzD69gT20JPmvu/vWznOEnyhzbAUXWg5sIFvNFw5XgIxEnt4C6SSCBJIIREswC1xSIBT4rAAl0SUAIdEtECsBIvAloTPOjaBNQmfNQoCoLt972oNhfUE1sC/6AsymcyZ+QDY8r1VX+QRaAAAAABJRU5ErkJggg=="
-              alt="Open spoiler arrow"
-            />
-          </picture>
+          <svg class="faq-spoiler-arrow">
+            <use href="/stp-8895/assets/sprite-eea6f7df.svg#icon-down-arrow"></use>
+          </svg>
         </button>
       </li>
-      <li class="faq-list-item" data-is-open="true">
+      <li class="faq-list-item" data-is-open="false">
         <div class="faq-wrapper">
           <h3 class="faq-item-head">Can I play offline?</h3>
           <div class="faq-ansver-wrapper">
@@ -601,16 +596,9 @@
           class="faq-spoiler-button"
           aria-label="Open spoiler button"
         >
-          <picture class="faq-button-picture">
-            <source
-              srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADjSURBVHgB7ZWxEoMgDEADZejIJ7SL+jku7n6aY+9c/By29hMcO6g0GbopgoTWgXfH4ZlwPEkOATKZzJ8RrmDTNK21Vk/T1A3DMEICpCu4LMsVJ62Uauu61vBrgXmeHygxppS4uILGmHdZlgYfKyGEllJWRVEYeg9MCJ8k+nLcvMVBJzD69gT20JPmvu/vWznOEnyhzbAUXWg5sIFvNFw5XgIxEnt4C6SSCBJIIREswC1xSIBT4rAAl0SUAIdEtECsBIvAloTPOjaBNQmfNQoCoLt972oNhfUE1sC/6AsymcyZ+QDY8r1VX+QRaAAAAABJRU5ErkJggg== 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGTSURBVHgB7dkxToRAFMbxB1JYbmlptbH0KDSQ7TyDN1hv4BVsSUgsLT2CJaWlJQcg4PuKTQhZjQ7MzBv9fgmZZbbZ+YcwhBUhIiIiIiKi/ycTR1VVXU3TdMBnHV/atu0kQbk4Gsex1GGHI8uyQ1mWt5Ig5wC66Mv5eVEUZYoRnAMMw/C6nEsxwoU46rruY7/f93me38zncY55fC8JcA4AfyHCqgCQeoTVASDlCM7PAefgBogb4XJeb5jP6k02VNf1nW7Fj7ob9Xocm6Z5EgfOu8A5WCQWu5z3sTvow9dRh52O1wghjjYNAKEiYOGz05042jwAhLwS1vISAFKJ4C0ApBDBawCwHsF7ALAcIUgAsBohWACwGCFoALAWIXgAsBQhSgCwEiFaALAQIWoAiB0hegCIGcFEAIgVwUwAiBHBVAAIHcFcAAgZwWQACBXBbAD4LoJsxHQA+CrCVswHAJ8RCvHk9N5eVryxDcHbFXB6by/G+QwQbPH6z9C7OPIWQC//+zU/7Bd6PR6EiIiIiIiI6Mc+AeMDI3jEaLlHAAAAAElFTkSuQmCC 2x"
-            />
-            <img
-              class="faq-spoiler-img"
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADjSURBVHgB7ZWxEoMgDEADZejIJ7SL+jku7n6aY+9c/By29hMcO6g0GbopgoTWgXfH4ZlwPEkOATKZzJ8RrmDTNK21Vk/T1A3DMEICpCu4LMsVJ62Uauu61vBrgXmeHygxppS4uILGmHdZlgYfKyGEllJWRVEYeg9MCJ8k+nLcvMVBJzD69gT20JPmvu/vWznOEnyhzbAUXWg5sIFvNFw5XgIxEnt4C6SSCBJIIREswC1xSIBT4rAAl0SUAIdEtECsBIvAloTPOjaBNQmfNQoCoLt972oNhfUE1sC/6AsymcyZ+QDY8r1VX+QRaAAAAABJRU5ErkJggg=="
-              alt="Open spoiler arrow"
-            />
-          </picture>
+          <svg class="faq-spoiler-arrow">
+            <use href="/stp-8895/assets/sprite-eea6f7df.svg#icon-down-arrow"></use>
+          </svg>
         </button>
       </li>
       <li class="faq-list-item" data-is-open="false">
@@ -627,16 +615,9 @@
           class="faq-spoiler-button"
           aria-label="Open spoiler button"
         >
-          <picture class="faq-button-picture">
-            <source
-              srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADjSURBVHgB7ZWxEoMgDEADZejIJ7SL+jku7n6aY+9c/By29hMcO6g0GbopgoTWgXfH4ZlwPEkOATKZzJ8RrmDTNK21Vk/T1A3DMEICpCu4LMsVJ62Uauu61vBrgXmeHygxppS4uILGmHdZlgYfKyGEllJWRVEYeg9MCJ8k+nLcvMVBJzD69gT20JPmvu/vWznOEnyhzbAUXWg5sIFvNFw5XgIxEnt4C6SSCBJIIREswC1xSIBT4rAAl0SUAIdEtECsBIvAloTPOjaBNQmfNQoCoLt972oNhfUE1sC/6AsymcyZ+QDY8r1VX+QRaAAAAABJRU5ErkJggg== 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGTSURBVHgB7dkxToRAFMbxB1JYbmlptbH0KDSQ7TyDN1hv4BVsSUgsLT2CJaWlJQcg4PuKTQhZjQ7MzBv9fgmZZbbZ+YcwhBUhIiIiIiKi/ycTR1VVXU3TdMBnHV/atu0kQbk4Gsex1GGHI8uyQ1mWt5Ig5wC66Mv5eVEUZYoRnAMMw/C6nEsxwoU46rruY7/f93me38zncY55fC8JcA4AfyHCqgCQeoTVASDlCM7PAefgBogb4XJeb5jP6k02VNf1nW7Fj7ob9Xocm6Z5EgfOu8A5WCQWu5z3sTvow9dRh52O1wghjjYNAKEiYOGz05042jwAhLwS1vISAFKJ4C0ApBDBawCwHsF7ALAcIUgAsBohWACwGCFoALAWIXgAsBQhSgCwEiFaALAQIWoAiB0hegCIGcFEAIgVwUwAiBHBVAAIHcFcAAgZwWQACBXBbAD4LoJsxHQA+CrCVswHAJ8RCvHk9N5eVryxDcHbFXB6by/G+QwQbPH6z9C7OPIWQC//+zU/7Bd6PR6EiIiIiIiI6Mc+AeMDI3jEaLlHAAAAAElFTkSuQmCC 2x"
-            />
-            <img
-              class="faq-spoiler-img"
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADjSURBVHgB7ZWxEoMgDEADZejIJ7SL+jku7n6aY+9c/By29hMcO6g0GbopgoTWgXfH4ZlwPEkOATKZzJ8RrmDTNK21Vk/T1A3DMEICpCu4LMsVJ62Uauu61vBrgXmeHygxppS4uILGmHdZlgYfKyGEllJWRVEYeg9MCJ8k+nLcvMVBJzD69gT20JPmvu/vWznOEnyhzbAUXWg5sIFvNFw5XgIxEnt4C6SSCBJIIREswC1xSIBT4rAAl0SUAIdEtECsBIvAloTPOjaBNQmfNQoCoLt972oNhfUE1sC/6AsymcyZ+QDY8r1VX+QRaAAAAABJRU5ErkJggg=="
-              alt="Open spoiler arrow"
-            />
-          </picture>
+          <svg class="faq-spoiler-arrow">
+            <use href="/stp-8895/assets/sprite-eea6f7df.svg#icon-down-arrow"></use>
+          </svg>
         </button>
       </li>
       <li class="faq-list-item" data-is-open="false">
@@ -654,16 +635,9 @@
           class="faq-spoiler-button"
           aria-label="Open spoiler button"
         >
-          <picture class="faq-button-picture">
-            <source
-              srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADjSURBVHgB7ZWxEoMgDEADZejIJ7SL+jku7n6aY+9c/By29hMcO6g0GbopgoTWgXfH4ZlwPEkOATKZzJ8RrmDTNK21Vk/T1A3DMEICpCu4LMsVJ62Uauu61vBrgXmeHygxppS4uILGmHdZlgYfKyGEllJWRVEYeg9MCJ8k+nLcvMVBJzD69gT20JPmvu/vWznOEnyhzbAUXWg5sIFvNFw5XgIxEnt4C6SSCBJIIREswC1xSIBT4rAAl0SUAIdEtECsBIvAloTPOjaBNQmfNQoCoLt972oNhfUE1sC/6AsymcyZ+QDY8r1VX+QRaAAAAABJRU5ErkJggg== 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGTSURBVHgB7dkxToRAFMbxB1JYbmlptbH0KDSQ7TyDN1hv4BVsSUgsLT2CJaWlJQcg4PuKTQhZjQ7MzBv9fgmZZbbZ+YcwhBUhIiIiIiKi/ycTR1VVXU3TdMBnHV/atu0kQbk4Gsex1GGHI8uyQ1mWt5Ig5wC66Mv5eVEUZYoRnAMMw/C6nEsxwoU46rruY7/f93me38zncY55fC8JcA4AfyHCqgCQeoTVASDlCM7PAefgBogb4XJeb5jP6k02VNf1nW7Fj7ob9Xocm6Z5EgfOu8A5WCQWu5z3sTvow9dRh52O1wghjjYNAKEiYOGz05042jwAhLwS1vISAFKJ4C0ApBDBawCwHsF7ALAcIUgAsBohWACwGCFoALAWIXgAsBQhSgCwEiFaALAQIWoAiB0hegCIGcFEAIgVwUwAiBHBVAAIHcFcAAgZwWQACBXBbAD4LoJsxHQA+CrCVswHAJ8RCvHk9N5eVryxDcHbFXB6by/G+QwQbPH6z9C7OPIWQC//+zU/7Bd6PR6EiIiIiIiI6Mc+AeMDI3jEaLlHAAAAAElFTkSuQmCC 2x"
-            />
-            <img
-              class="faq-spoiler-img"
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADjSURBVHgB7ZWxEoMgDEADZejIJ7SL+jku7n6aY+9c/By29hMcO6g0GbopgoTWgXfH4ZlwPEkOATKZzJ8RrmDTNK21Vk/T1A3DMEICpCu4LMsVJ62Uauu61vBrgXmeHygxppS4uILGmHdZlgYfKyGEllJWRVEYeg9MCJ8k+nLcvMVBJzD69gT20JPmvu/vWznOEnyhzbAUXWg5sIFvNFw5XgIxEnt4C6SSCBJIIREswC1xSIBT4rAAl0SUAIdEtECsBIvAloTPOjaBNQmfNQoCoLt972oNhfUE1sC/6AsymcyZ+QDY8r1VX+QRaAAAAABJRU5ErkJggg=="
-              alt="Open spoiler arrow"
-            />
-          </picture>
+          <svg class="faq-spoiler-arrow">
+            <use href="/stp-8895/assets/sprite-eea6f7df.svg#icon-down-arrow"></use>
+          </svg>
         </button>
       </li>
       <li class="faq-list-item" data-is-open="false">
@@ -681,24 +655,230 @@
           class="faq-spoiler-button"
           aria-label="Open spoiler button"
         >
-          <picture class="faq-button-picture">
-            <source
-              srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADjSURBVHgB7ZWxEoMgDEADZejIJ7SL+jku7n6aY+9c/By29hMcO6g0GbopgoTWgXfH4ZlwPEkOATKZzJ8RrmDTNK21Vk/T1A3DMEICpCu4LMsVJ62Uauu61vBrgXmeHygxppS4uILGmHdZlgYfKyGEllJWRVEYeg9MCJ8k+nLcvMVBJzD69gT20JPmvu/vWznOEnyhzbAUXWg5sIFvNFw5XgIxEnt4C6SSCBJIIREswC1xSIBT4rAAl0SUAIdEtECsBIvAloTPOjaBNQmfNQoCoLt972oNhfUE1sC/6AsymcyZ+QDY8r1VX+QRaAAAAABJRU5ErkJggg== 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGTSURBVHgB7dkxToRAFMbxB1JYbmlptbH0KDSQ7TyDN1hv4BVsSUgsLT2CJaWlJQcg4PuKTQhZjQ7MzBv9fgmZZbbZ+YcwhBUhIiIiIiKi/ycTR1VVXU3TdMBnHV/atu0kQbk4Gsex1GGHI8uyQ1mWt5Ig5wC66Mv5eVEUZYoRnAMMw/C6nEsxwoU46rruY7/f93me38zncY55fC8JcA4AfyHCqgCQeoTVASDlCM7PAefgBogb4XJeb5jP6k02VNf1nW7Fj7ob9Xocm6Z5EgfOu8A5WCQWu5z3sTvow9dRh52O1wghjjYNAKEiYOGz05042jwAhLwS1vISAFKJ4C0ApBDBawCwHsF7ALAcIUgAsBohWACwGCFoALAWIXgAsBQhSgCwEiFaALAQIWoAiB0hegCIGcFEAIgVwUwAiBHBVAAIHcFcAAgZwWQACBXBbAD4LoJsxHQA+CrCVswHAJ8RCvHk9N5eVryxDcHbFXB6by/G+QwQbPH6z9C7OPIWQC//+zU/7Bd6PR6EiIiIiIiI6Mc+AeMDI3jEaLlHAAAAAElFTkSuQmCC 2x"
-            />
-            <img
-              class="faq-spoiler-img"
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADjSURBVHgB7ZWxEoMgDEADZejIJ7SL+jku7n6aY+9c/By29hMcO6g0GbopgoTWgXfH4ZlwPEkOATKZzJ8RrmDTNK21Vk/T1A3DMEICpCu4LMsVJ62Uauu61vBrgXmeHygxppS4uILGmHdZlgYfKyGEllJWRVEYeg9MCJ8k+nLcvMVBJzD69gT20JPmvu/vWznOEnyhzbAUXWg5sIFvNFw5XgIxEnt4C6SSCBJIIREswC1xSIBT4rAAl0SUAIdEtECsBIvAloTPOjaBNQmfNQoCoLt972oNhfUE1sC/6AsymcyZ+QDY8r1VX+QRaAAAAABJRU5ErkJggg=="
-              alt="Open spoiler arrow"
-            />
-          </picture>
+          <svg class="faq-spoiler-arrow">
+            <use href="/stp-8895/assets/sprite-eea6f7df.svg#icon-down-arrow"></use>
+          </svg>
         </button>
       </li>
     </ul>
   </div>
 </section>
 
-      <section class="section">
-  <div class="container"></div>
+      <section class="section reviews-section" id="reviews">
+  <div class="container reviews-container">
+    <h2 class="reviews-head">Reviews</h2>
+    <div class="review-swiper-container" data-swiper>
+      <ul class="reviews-list" data-swiper-wrapper>
+        <li class="reviews-slide-item" data-swiper-slide>
+          <div class="rewiew-slide-wrapper">
+            <div class="slider-container">
+              <div class="rewiew-avatar-thumb">
+                <picture class="review-avatar">
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="/stp-8895/assets/emily-desktop@1x-11a9e990.jpg 1x, /stp-8895/assets/emily-desktop@2x-173c53f0.jpg 2x"
+                  />
+                  <source
+                    media="(min-width: 320px) and (max-width: 1199px)"
+                    srcset="/stp-8895/assets/emily-mobile@1x-97747c28.jpg 1x, /stp-8895/assets/emily-mobile@2x-133f325a.jpg 2x"
+                  />
+                  <img
+                    src="/stp-8895/assets/emily-mobile@1x-97747c28.jpg"
+                    class="review-avatar-img"
+                    width="115"
+                    height="160"
+                    alt="Reviews avatar"
+                  />
+                </picture>
+              </div>
+              <div class="review-description-wrapper">
+                <div class="reviews-name-wrapper">
+                  <p class="review-name">Emily Carter</p>
+                  <svg class="reviews-quote-icon">
+                    <use href="/stp-8895/assets/sprite-eea6f7df.svg#icon-quote"></use>
+                  </svg>
+                </div>
+                <p class="review-description">
+                  I love collecting and merging planes. It’s so relaxing, and I
+                  can play while commuting
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="reviews-slide-item">
+          <div class="rewiew-slide-wrapper">
+            <div class="slider-container">
+              <div class="rewiew-avatar-thumb">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="/stp-8895/assets/james-desktop@1x-c512c701.jpg 1x, /stp-8895/assets/james-desktop@2x-89aedcf5.jpg 2x"
+                  />
+                  <source
+                    media="(min-width: 320px) and (max-width: 1199px)"
+                    srcset="/stp-8895/assets/james-mobile@1x-e1f42cb2.jpg 1x, /stp-8895/assets/james-mobile@2x-b4c1be82.jpg 2x"
+                  />
+                  <img
+                    src="/stp-8895/assets/james-mobile@1x-e1f42cb2.jpg"
+                    class="review-avatar-img"
+                    width="115"
+                    height="160"
+                    alt="Reviews avatar"
+                  />
+                </picture>
+              </div>
+              <div class="review-description-wrapper">
+                <div class="reviews-name-wrapper">
+                  <p class="review-name">James Liu</p>
+                  <svg class="reviews-quote-icon">
+                    <use href="/stp-8895/assets/sprite-eea6f7df.svg#icon-quote"></use>
+                  </svg>
+                </div>
+                <p class="review-description">
+                  Finally, a merge game that looks great and feels satisfying.
+                  The idle rewards are generous too!
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="reviews-slide-item">
+          <div class="rewiew-slide-wrapper">
+            <div class="slider-container">
+              <div class="rewiew-avatar-thumb">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="/stp-8895/assets/sophia-desktop@1x-553c7b05.jpg 1x, /stp-8895/assets/sophia-desktop@2x-4063a218.jpg 2x"
+                  />
+                  <source
+                    media="(min-width: 320px) and (max-width: 1199px)"
+                    srcset="/stp-8895/assets/sophia-mobile@1x-e3eebb88.jpg 1x, /stp-8895/assets/sophia-mobile@2x-51345a72.jpg 2x"
+                  />
+                  <img
+                    src="/stp-8895/assets/sophia-mobile@1x-e3eebb88.jpg"
+                    class="review-avatar-img"
+                    width="115"
+                    height="160"
+                    alt="Reviews avatar"
+                  />
+                </picture>
+              </div>
+              <div class="review-description-wrapper">
+                <div class="reviews-name-wrapper">
+                  <p class="review-name">Sophia Nguyen</p>
+                  <svg class="reviews-quote-icon">
+                    <use href="/stp-8895/assets/sprite-eea6f7df.svg#icon-quote"></use>
+                  </svg>
+                </div>
+                <p class="review-description">
+                  Super easy to get into and really fun to watch my fleet grow
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="reviews-slide-item">
+          <div class="rewiew-slide-wrapper">
+            <div class="slider-container">
+              <div class="rewiew-avatar-thumb">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="/stp-8895/assets/daniel-desktop@1x-b8bb6543.jpg 1x, /stp-8895/assets/daniel-desktop@2x-d30a0f80.jpg 2x"
+                  />
+                  <source
+                    media="(min-width: 320px) and (max-width: 1199px)"
+                    srcset="/stp-8895/assets/daniel-mobile@1x-9f7ec03c.jpg 1x, /stp-8895/assets/daniel-mobile@2x-3c52628e.jpg 2x"
+                  />
+                  <img
+                    src="/stp-8895/assets/daniel-mobile@1x-9f7ec03c.jpg"
+                    class="review-avatar-img"
+                    width="115"
+                    height="160"
+                    alt="Reviews avatar"
+                  />
+                </picture>
+              </div>
+              <div class="review-description-wrapper">
+                <div class="reviews-name-wrapper">
+                  <p class="review-name">Daniel Romero</p>
+                  <svg class="reviews-quote-icon">
+                    <use href="/stp-8895/assets/sprite-eea6f7df.svg#icon-quote"></use>
+                  </svg>
+                </div>
+                <p class="review-description">
+                  The plane designs are really creative, and I always look
+                  forward to what I unlock next
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="reviews-slide-item">
+          <div class="rewiew-slide-wrapper">
+            <div class="slider-container">
+              <div class="rewiew-avatar-thumb">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="/stp-8895/assets/olivia-desktop@1x-564fa6d1.jpg 1x, /stp-8895/assets/olivia-desktop@2x-3e79a6f8.jpg 2x"
+                  />
+                  <source
+                    media="(min-width: 320px) and (max-width: 1199px)"
+                    srcset="/stp-8895/assets/olivia-mobile@1x-dee1eaf7.jpg 1x, /stp-8895/assets/olivia-mobile@2x-429433ee.jpg 2x"
+                  />
+                  <img
+                    src="/stp-8895/assets/olivia-mobile@1x-dee1eaf7.jpg"
+                    class="review-avatar-img"
+                    width="115"
+                    height="160"
+                    alt="Reviews avatar"
+                  />
+                </picture>
+              </div>
+              <div class="review-description-wrapper">
+                <div class="reviews-name-wrapper">
+                  <p class="review-name">Olivia Bennett</p>
+                  <svg class="reviews-quote-icon">
+                    <use href="/stp-8895/assets/sprite-eea6f7df.svg#icon-quote"></use>
+                  </svg>
+                </div>
+                <p class="review-description">
+                  Great for casual play. No stress, just simple merging fun and
+                  a nice progression curve
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="reviews-swiper-pagination" data-swiper-pagination></div>
+    </div>
+    <button
+      type="button"
+      class="reviews-swiper-button-nav"
+      data-swipe-left
+      data-swipe-button
+      aria-label="Swipe left button"
+    >
+      <svg class="reviews-swiper-button-icon">
+        <use href="/stp-8895/assets/sprite-eea6f7df.svg#icon-swipe"></use>
+      </svg>
+    </button>
+    <button
+      type="button"
+      class="reviews-swiper-button-nav"
+      data-swipe-right
+      data-swipe-button
+      aria-label="Swipe right button"
+    >
+      <svg class="reviews-swiper-button-icon">
+        <use href="/stp-8895/assets/sprite-eea6f7df.svg#icon-swipe"></use>
+      </svg>
+    </button>
+  </div>
 </section>
 
       <section class="gallery" id="gallery">
@@ -746,7 +926,7 @@
       aria-label="Close menu"
     >
       <svg class="close-menu-button-icon" width="32" height="32">
-        <use href="/stp-8895/assets/sprite-92e89aef.svg#icon-close"></use>
+        <use href="/stp-8895/assets/sprite-eea6f7df.svg#icon-close"></use>
       </svg>
     </button>
     <nav data-class="modal-nav">
