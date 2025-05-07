@@ -13,7 +13,7 @@
   @include media(desktop) {
     @include retina-background(
       '../img/reviews/bg-desktop@1x.png',
-      '../img/reviews/bg-desktop@1x.png',
+      '../img/reviews/bg-desktop@2x.png',
       no-repeat,
       top
     );
@@ -75,9 +75,6 @@
   display: block;
   width: 115px;
   height: 160px;
-}
-
-.review-avatar-img {
 }
 
 .reviews-name-wrapper {
@@ -242,13 +239,12 @@
     right: 106px;
   }
 
-  [data-swipe-right] .reviews-swiper-button-icon {
+  [data-swipe-left] .reviews-swiper-button-icon {
     transform: rotate(180deg);
   }
 
   .reviews-swiper-button-icon {
     display: block;
-    stroke-width: 2px;
     stroke: #24292e;
   }
 }
