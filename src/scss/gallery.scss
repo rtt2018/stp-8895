@@ -102,6 +102,13 @@
   transition: opacity 0.3s ease-in;
 }
 
+//.swiper-slide-active {transform: scale(1.2);}
+
+.swiper-slide:not(.swiper-slide-active) {
+  transform: scale(0.8);
+  transition: transform 0.3s ease-in;
+}
+
 [data-is-visible='true'] {
   opacity: 1;
   z-index: 5;
