@@ -16,6 +16,7 @@ const swiperReviews = new Swiper(swiperContainer, {
     direction: "horizontal",
     slidesPerView: 1,
     spaceBetween: 32,
+    loop: true,
     pagination: {
         el: paginationElement,
         clickable: true,
