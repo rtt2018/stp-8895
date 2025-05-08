@@ -1,6 +1,5 @@
 import Swiper from 'swiper';
-// import { Keyboard, Navigation, EffectCoverflow } from 'swiper/modules';
-// import 'swiper/css/bundle';
+import 'swiper/css/bundle';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 import 'swiper/scss/keyboard';
@@ -17,31 +16,29 @@ function initSwiper() {
     if (swiper) swiper.destroy(true, true);
 
     swiper = new Swiper(swiperGalleryContainer, {
-        // modules: [Keyboard, Navigation, EffectCoverflow],
         slideClass: slideGalleryElements.classList[0],
         wrapperClass: swiperGalleryWrapperElement.classList[0],
+        centeredSlides: true,
         loop: true,
         slidesPerView: 'auto',
-        effect: 'coverflow',
+        effect: window.innerWidth >= 1200 ? 'coverflow' : 'slides',
         coverflowEffect: {
             rotate: 0,
             stretch: 0,
             depth: 100,
             modifier: 1.5,
             slideShadows: false,
-
         },
         breakpoints: {
             320: {
                 navigation: {
                     enabled: false,
                 },
-                spaceBetween: -270,
+                spaceBetween: -250,
             },
             1200: {
                 grabCursor: true,
                 pagination: false,
-                centeredSlides: true,
                 spaceBetween: -57,
             },
         },
