@@ -57,15 +57,15 @@
 .gallery-swiper {
   overflow: hidden;
   order: 3;
+  height: 480px;
+
   @include media(desktop) {
-    order: 1; //Зображення перед текстом
+    order: 1;
+    height: 600px;
   }
 }
 
 .gallery-list {
-  position: absolute;
-  left: 0;
-  top: 0;
   display: flex;
   width: 100%;
   margin-bottom: 16px;
