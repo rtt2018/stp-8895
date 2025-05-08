@@ -1,0 +1,124 @@
+.cookies-container {
+  position: fixed;
+  z-index: 99;
+  width: 100vw;
+  bottom: 0;
+  background-color: #f7f7f7;
+  padding: 24px 16px;
+}
+
+[data-is-visible='true'] {
+  display: block;
+}
+
+[data-is-visible='false'] {
+  display: none;
+}
+
+.cookies-wrapper {
+  width: 288px;
+  margin: 0 auto;
+}
+
+.cookies-head {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 117%;
+  text-align: center;
+  color: #1c1c1c;
+  margin-bottom: 16px;
+}
+.cookies-desc {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #24292e;
+  margin-bottom: 24px;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+}
+
+[data-is-accept] {
+  border-radius: 6px;
+  padding: 10px;
+  width: 288px;
+  height: 48px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #fff;
+  outline: none;
+  border: none;
+  transition: 0.3 ease-in;
+  transition-property: color, background-color;
+}
+
+[data-is-accept='true'] {
+  background-color: #1873cd;
+  color: #fff;
+}
+
+[data-is-accept='false'] {
+  background: #a8cff5;
+  color: #1c1c1c;
+}
+
+[data-is-accept='true']:active {
+  background-color: #0e4376;
+}
+
+[data-is-accept='false']:active {
+  background-color: #5ba4eb;
+}
+
+@media only screen and (min-width: 1200px) {
+  .cookies-container {
+    padding: 48px 0;
+    height: 350px;
+  }
+
+  .cookies-wrapper {
+    width: 850px;
+  }
+
+  .cookies-head {
+    font-size: 40px;
+    line-height: 70%;
+    margin-bottom: 40px;
+  }
+  .cookies-desc {
+    font-size: 20px;
+    line-height: 140%;
+    margin-bottom: 48px;
+  }
+
+  [data-is-accept] {
+    width: 183px;
+    height: 46px;
+    font-size: 18px;
+    line-height: 144%;
+  }
+
+  .button-wrapper {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  [data-is-accept='true']:hover,
+  [data-is-accept='true']:focus {
+    background-color: #1561ad;
+  }
+
+  [data-is-accept='false']:hover,
+  [data-is-accept='false']:focus {
+    background-color: #89bdf1;
+  }
+}

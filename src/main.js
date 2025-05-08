@@ -9,3 +9,4 @@ import './js/header';
 import './js/hero';
 import './js/howto';
 import './js/reviews';
+import './js/cookies'
