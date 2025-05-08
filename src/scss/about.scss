@@ -1,11 +1,11 @@
-.about {
+.about-container {
   @include retina-background(
     '../img/about/about-bg@1x.png',
     '../img/about/about-bg@2x.png',
     no-repeat,
     top
   );
-
+  background-size: 100%;
   @include media(desktop) {
     @include retina-background(
       '../img/about/about-bg-desktop@1x.png',
