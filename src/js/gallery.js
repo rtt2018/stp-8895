@@ -1,4 +1,5 @@
 import Swiper from 'swiper';
+import 'swiper/css/bundle';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 import 'swiper/scss/keyboard';
