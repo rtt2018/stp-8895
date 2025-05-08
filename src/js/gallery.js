@@ -1,43 +1,49 @@
 import Swiper from 'swiper';
-import { Keyboard, Navigation, EffectCoverflow } from 'swiper/modules';
-import 'swiper/css/bundle';
+// import { Keyboard, Navigation, EffectCoverflow } from 'swiper/modules';
+// import 'swiper/css/bundle';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 import 'swiper/scss/keyboard';
 import 'swiper/bundle';
 
 const swiperGalleryContainer = document.querySelector('[data-gallery-swiper]');
-
 const swiperGalleryWrapperElement = document.querySelector('[data-gallery-swiper-wrapper]');
-
 const slideGalleryElements = document.querySelector('[data-gallery-slide]');
-
 const paginationGalleryElement = document.querySelector('[data-gallery-pagination]');
-
 let swiper;
 
 function initSwiper() {
 
     if (swiper) swiper.destroy(true, true);
 
-    const isDesktop = window.innerWidth >= 1200;
-
     swiper = new Swiper(swiperGalleryContainer, {
-        modules: [Keyboard, Navigation, EffectCoverflow],
+        // modules: [Keyboard, Navigation, EffectCoverflow],
         slideClass: slideGalleryElements.classList[0],
         wrapperClass: swiperGalleryWrapperElement.classList[0],
         loop: true,
         slidesPerView: 'auto',
-        centeredSlides: true,
-        spaceBetween: -132,
-        grabCursor: isDesktop,
         effect: 'coverflow',
         coverflowEffect: {
             rotate: 0,
-            stretch: 10,
-            depth: 10,
-            modifier: 1,
+            stretch: 0,
+            depth: 100,
+            modifier: 1.5,
             slideShadows: false,
+
+        },
+        breakpoints: {
+            320: {
+                navigation: {
+                    enabled: false,
+                },
+                spaceBetween: -270,
+            },
+            1200: {
+                grabCursor: true,
+                pagination: false,
+                centeredSlides: true,
+                spaceBetween: -57,
+            },
         },
         navigation: {
             nextEl: '[data-gallery-swipe-right]',
@@ -55,16 +61,6 @@ function initSwiper() {
         keyboard: {
             enabled: true,
             onlyInViewport: false,
-        },
-        breakpoints: {
-            320: {
-                navigation: {
-                    enabled: false,
-                },
-            },
-            1020: {
-                pagination: false,
-            },
         },
         on: {
             slideChange: function () {
