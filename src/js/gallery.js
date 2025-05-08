@@ -21,7 +21,7 @@ function initSwiper() {
         wrapperClass: swiperGalleryWrapperElement.classList[0],
         centeredSlides: window.innerWidth >= 1200 ? true : false,
         spaceBetween: window.innerWidth >= 1200 ? -116 : 16,
-        effect: window.innerWidth >= 1200 ? 'coverflow' : 'cards',
+        effect: window.innerWidth >= 1200 ? 'coverflow' : 'slides',
         centeredSlidesBounds: false,
         loop: true,
         grabCursor: false,
