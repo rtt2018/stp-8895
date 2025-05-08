@@ -2,13 +2,10 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
 const swiperGalleryContainer = document.querySelector('[data-gallery-swiper]');
-
 const swiperGalleryWrapperElement = document.querySelector(
   '[data-gallery-swiper-wrapper]'
 );
-
 const slideGalleryElements = document.querySelector('[data-gallery-slide]');
-
 const paginationGalleryElement = document.querySelector(
   '[data-gallery-pagination]'
 );
@@ -20,18 +17,10 @@ document.addEventListener('DOMContentLoaded', function () {
     direction: 'horizontal',
     grabCursor: true,
     loop: true,
-    loopedSlides: 5,
     centeredSlides: false,
     slidesPerView: 'auto',
-    spaceBetween: window.innerWidth < 1200 ? -320 : 16,
-    effect: window.innerWidth >= 1200 ? 'coverflow' : 'slides',
-    coverflowEffect: {
-      rotate: 0,
-      stretch: 25,
-      depth: 100,
-      modifier: 4,
-      slideShadows: false,
-    },
+    spaceBetween: 0,
+    effect: 'slide',
 
     pagination: {
       el: paginationGalleryElement,
@@ -48,14 +37,32 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     breakpoints: {
       320: {
+        navigation: false,
+      },
+
+      1200: {
+        slidesPerView: 5,
+        spaceBetween: 32,
+        centeredSlides: true,
+        grabCursor: true,
+        effect: 'coverflow',
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2.5,
+          slideShadows: false,
+        },
+
+        pagination: false,
         navigation: {
-          enabled: false,
+          nextEl: '[data-gallery-swipe-right]',
+          prevEl: '[data-gallery-swipe-left]',
+          enabled: true,
         },
       },
-      1200: {
-        pagination: false,
-      },
     },
+
     on: {
       slideChange: function () {
         const activeSlide = this.slides[this.activeIndex];
