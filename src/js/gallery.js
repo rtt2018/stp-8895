@@ -22,6 +22,11 @@ function initSwiper() {
         loop: true,
         slidesPerView: 'auto',
         effect: window.innerWidth >= 1200 ? 'coverflow' : 'slides',
+        effect: window.innerWidth >= 1200 ? 'coverflow' : 'cards',
+        centeredSlides: window.innerWidth >= 1200 ? true : false,
+        slidesPerView: window.innerWidth >= 1200 ? 5 : 'auto',
+        spaceBetween: window.innerWidth >= 1200 ? 32 : 16,
+        centeredSlidesBounds: true,
         coverflowEffect: {
             rotate: 0,
             stretch: 0,
