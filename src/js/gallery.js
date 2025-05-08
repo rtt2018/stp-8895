@@ -18,28 +18,39 @@ function initSwiper() {
     swiper = new Swiper(swiperGalleryContainer, {
         slideClass: slideGalleryElements.classList[0],
         wrapperClass: swiperGalleryWrapperElement.classList[0],
-        centeredSlides: true,
+        centeredSlides: window.innerWidth >= 1200 ? true : false,
+        spaceBetween: window.innerWidth >= 1200 ? -116 : 16,
+        effect: window.innerWidth >= 1200 ? 'coverflow' : 'cards',
+        centeredSlidesBounds: false,
         loop: true,
+        grabCursor: false,
         slidesPerView: 'auto',
-        effect: window.innerWidth >= 1200 ? 'coverflow' : 'slides',
         coverflowEffect: {
             rotate: 0,
             stretch: 0,
-            depth: 100,
+            depth: 130,
             modifier: 1.5,
             slideShadows: false,
+        },
+        cardsEffect: {
+            slideShadows: false,
+            rotate: 0,
+            perSlideOffset: 10,
+            perSlideScale: 1,
         },
         breakpoints: {
             320: {
                 navigation: {
                     enabled: false,
                 },
-                spaceBetween: -250,
+                centeredSlidesBounds: true,
+
+                // spaceBetween: -250,
             },
             1200: {
                 grabCursor: true,
                 pagination: false,
-                spaceBetween: -57,
+                spaceBetween: -116,
             },
         },
         navigation: {
@@ -68,9 +79,11 @@ function initSwiper() {
                 currentVisible.dataset.isVisible = String(false);
                 const nextVisibleDesc = descriptionList.querySelector(`[data-description-number="${activeSlideNumber}"]`)
                 nextVisibleDesc.dataset.isVisible = true;
-            }
+            },
+
         }
     });
+
 }
 
 initSwiper();
