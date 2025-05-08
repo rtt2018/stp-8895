@@ -1,38 +1,71 @@
-// import Swiper from 'swiper/bundle';
-// import 'swiper/css/bundle';
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
-// document.addEventListener('DOMContentLoaded', function () {
-//   const gallerySwiper = new Swiper('.gallery-swiper', {
-//     direction: 'horizontal',
-//     pagination: {
-//       el: '.swiper-pagination',
-//       clickable: true,
-//     },
+const swiperGalleryContainer = document.querySelector('[data-gallery-swiper]');
 
-//     slidesPerView: 'auto',
-//     spaceBetween: 15,
-//     centeredSlides: true,
-//     effect: 'slide',
+const swiperGalleryWrapperElement = document.querySelector('[data-gallery-swiper-wrapper]');
 
-//     breakpoints: {
-//       320: {
-//         slidesPerView: 'auto',
-//         spaceBetween: 10,
-//         centeredSlides: true,
-//         effect: 'slide',
-//       },
-//       1020: {
-//         slidesPerView: 'auto',
-//         spaceBetween: 30,
-//         centeredSlides: true,
-//         effect: 'cards',
-//         cardsEffect: {
-//           perSlideOffset: 10,
-//           perSlideRotate: 2,
-//           rotate: true,
-//           slideShadows: true,
-//         },
-//       },
-//     },
-//   });
-// });
+const slideGalleryElements = document.querySelector('[data-gallery-slide]');
+
+const paginationGalleryElement = document.querySelector('[data-gallery-pagination]');
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const gallerySwiper = new Swiper(swiperGalleryContainer, {
+        slideClass: slideGalleryElements.classList[0],
+        wrapperClass: swiperGalleryWrapperElement.classList[0],
+        direction: 'horizontal',
+        grabCursor: true,
+        loop: true,
+        centeredSlides: false,
+        slidesPerView: "auto",
+        spaceBetween: 28,
+        effect: "coverflow",
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 10,    // трохи зсуває слайди один на одного
+            depth: 100,
+            modifier: 4,
+            slideShadows: false,
+        },
+
+        pagination: {
+            el: paginationGalleryElement,
+            clickable: true,
+            bulletClass: 'gallery-swiper-bullet',
+            bulletActiveClass: 'current',
+            renderBullet: function (index, className) {
+                return `<div class="${className}" data-swiper-pagination-bullet data-bullet-number="${index}"></div>`;
+            },
+        },
+        navigation: {
+            nextEl: '[data-gallery-swipe-right]',
+            prevEl: '[data-gallery-swipe-left]',
+        },
+        breakpoints: {
+            320: {
+                navigation: {
+                    enabled: false,
+                },
+            },
+            1020: {
+                pagination: false,
+            },
+        },
+        on: {
+            slideChange: function () {
+                const activeSlide = this.slides[this.activeIndex];
+                const activeSlideNumber = Number.parseInt(activeSlide.dataset.slideNumber)
+                const descriptionList = document.querySelector('[data-gallery-description-list]');
+                const currentVisible = descriptionList.querySelector('[data-is-visible="true"]')
+                currentVisible.dataset.isVisible = String(false);
+                const nextVisibleDesc = descriptionList.querySelector(`[data-description-number="${activeSlideNumber}"]`)
+                nextVisibleDesc.dataset.isVisible = true;
+            }
+        }
+    });
+});
+
+/**
+ * 1. Зробити зміну ткесту у підписі
+ * 2.  **/

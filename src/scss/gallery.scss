@@ -1,4 +1,4 @@
-.gallery {
+.gallery-section {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -7,12 +7,14 @@
 .gallery-container {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .gallery-title {
   font-family: 'Nunito', sans-serif;
   font-weight: 900;
   letter-spacing: -0.02em;
+  order: 0;
   @include font(24, 28);
   background: linear-gradient(180deg, #145ca4 42.79%, #2597f3 74.04%);
   background-clip: text;
@@ -30,6 +32,7 @@
   justify-content: center;
   flex-direction: row;
   gap: 10px;
+  order: 1;
   margin-bottom: 8px;
   border-radius: 10px;
   padding: 16px;
@@ -51,62 +54,94 @@
   }
 }
 
-// Swiper container styles
 .gallery-swiper {
-  width: 100%;
-  height: 480px;
-  perspective: 1200px;
   overflow: hidden;
-  @include media(desktop) {
-    order: 1; /* Зображення перед текстом */
-    height: 600px;
-  }
+  order: 3;
 }
 
-.swiper-slider {
+.gallery-list {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.gallery-screenshot-thumb {
+  overflow: hidden;
+  border-radius: 16px;
   width: 260px;
   height: 480px;
+}
+
+[data-gallery-pagination] {
   display: flex;
   justify-content: center;
-  align-items: center;
-  border-radius: 15px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  @include media(desktop) {
+  gap: 8px;
+}
+
+.gallery-description-list {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-description-item {
+  position: absolute;
+  transition: opacity 0.3s ease-in;
+}
+
+[data-is-visible='true'] {
+  opacity: 1;
+  z-index: 5;
+  // transition: opacity 0.3s ease-in 0.3s;
+}
+
+[data-is-visible='false'] {
+  opacity: 0;
+  z-index: 1;
+  // transition: opacity 0.3s ease-in;
+}
+
+.gallery-swiper-button-nav {
+  display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  .gallery-screenshot-thumb {
+    border-radius: 20px;
     width: 350px;
     height: 600px;
   }
-}
 
-.swiper-slide-next {
-  transform: translateX(5px) scale(0.95);
-  opacity: 0.8;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
+  .gallery-pagination {
+    display: none;
+  }
 
-.gallery-image {
-  border-radius: 15px;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
+  .gallery-swiper-button-nav {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    bottom: 276px;
+  }
 
-.gallery-swiper .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-  bottom: auto;
-  left: auto;
-  right: auto;
-  transform: none;
-  text-align: center;
-  z-index: 10;
-}
+  .gallery-swiper-button-icon {
+    display: block;
+    stroke: #24292e;
+  }
 
-.gallery-swiper .swiper-pagination-bullet {
-  background: #145ca4;
-  opacity: 1;
-}
+  [data-gallery-swipe-left] {
+    left: 8px;
+  }
 
-.gallery-swiper .swiper-pagination-bullet-active {
-  background: #d10003;
+  [data-gallery-swipe-right] {
+    right: 8px;
+  }
+
+  [data-gallery-swipe-left] .gallery-swiper-button-icon {
+    transform: rotate(180deg);
+  }
 }
