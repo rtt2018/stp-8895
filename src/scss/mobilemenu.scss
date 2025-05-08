@@ -72,11 +72,11 @@ div[data-action='isClose'] > .modal-wrapper {
 .modal-nav-link::before {
   content: '';
   position: absolute;
-  width: 112%;
+  width: 104%;
   height: 4px;
   background-color: $_button-color;
   border-radius: 2px;
-  left: -6%;
+  left: -2%;
   bottom: -4px;
   transition: 0.5s ease-in;
   transform: scaleX(0);
