@@ -59,7 +59,11 @@
   order: 3;
   height: 480px;
 
+  height: 480px;
+
   @include media(desktop) {
+    order: 1;
+    height: 600px;
     order: 1;
     height: 600px;
   }
@@ -67,6 +71,7 @@
 
 .gallery-list {
   display: flex;
+  width: 100%;
   width: 100%;
   margin-bottom: 16px;
 }
@@ -183,6 +188,11 @@
 
   [data-gallery-swipe-left] .gallery-swiper-button-icon {
     transform: rotate(180deg);
+  }
+
+  .swiper-slide {
+    width: 350px !important;
+    height: 600px;
   }
 
   .swiper-slide {
