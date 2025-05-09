@@ -58,10 +58,12 @@
   overflow: hidden;
   order: 3;
   height: 480px;
+  margin-bottom: 16px;
 
   @include media(desktop) {
     order: 1;
     height: 600px;
+    margin-bottom: 0;
   }
 }
 
@@ -117,6 +119,7 @@
   display: flex;
   justify-content: center;
   gap: 8px;
+  order: 4;
 }
 
 .gallery-description-list {
@@ -138,6 +141,22 @@
 [data-is-visible='false'] {
   opacity: 0;
   z-index: 1;
+}
+
+[data-gallery-pagination-bullet] {
+  width: 10px;
+  height: 10px;
+  background-color: #c9cccf;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  transition-property: width, background-color;
+}
+
+[data-gallery-pagination-bullet='true'] {
+  border-radius: 8px;
+  width: 26px;
+  height: 10px;
+  background-color: #d10003;
 }
 
 .gallery-swiper-button-nav {
@@ -190,5 +209,9 @@
 
   .swiper-wrapper {
     height: 600px;
+  }
+
+  [data-gallery-pagination] {
+    display: none;
   }
 }
