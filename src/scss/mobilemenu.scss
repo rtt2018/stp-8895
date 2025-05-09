@@ -13,6 +13,9 @@ html[data-scroll-lock='true'] {
   z-index: 1000;
   transition: 0.5s ease-in;
   transition-property: opacity;
+  @include media(desktop) {
+    display: none;
+  }
 }
 
 div[data-action='isClose'] {
@@ -88,10 +91,4 @@ div[data-action='isClose'] > .modal-wrapper {
   display: flex;
   flex-direction: column;
   gap: 16px;
-}
-
-@media only screen and (min-width: 1200px) {
-  .modal-window {
-    display: none;
-  }
 }

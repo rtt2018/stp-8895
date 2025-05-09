@@ -26,7 +26,9 @@
   $position: null,
   $size: null
 ) {
-  background-image: url($image);
+  @if not $retina-image {
+    background-image: url($image);
+  }
   @if $repeat {
     background-repeat: $repeat;
   }
