@@ -1,12 +1,7 @@
 import './js/mobilemenu';
-import './js/about';
-import './js/benefits';
 import './js/faq';
-import './js/feature';
 import './js/footer';
 import './js/gallery';
 import './js/header';
-import './js/hero';
-import './js/howto';
 import './js/reviews';
-import './js/cookies'
+import './js/cookies';
