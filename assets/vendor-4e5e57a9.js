@@ -3,4 +3,4 @@ function Ke(s){return s!==null&&typeof s=="object"&&"constructor"in s&&s.constru
         rotateZ(${o.rotate?u?-L:L:0}deg)
         scale(${I})
       `;if(o.slideShadows){let z=n.querySelector(".swiper-slide-shadow");z||(z=me("cards",n)),z&&(z.style.opacity=Math.min(Math.max((Math.abs(v)-.5)/.5,0),1))}n.style.zIndex=-Math.abs(Math.round(l))+f.length;const C=xe(o,n);C.style.transform=P}},setTransition:f=>{const d=e.slides.map(u=>ce(u));d.forEach(u=>{u.style.transitionDuration=`${f}ms`,u.querySelectorAll(".swiper-slide-shadow").forEach(o=>{o.style.transitionDuration=`${f}ms`})}),Ae({swiper:e,duration:f,transformElements:d})},perspective:()=>!0,overwriteParams:()=>({_loopSwapReset:!1,watchSlidesProgress:!0,loopAdditionalSlides:e.params.cardsEffect.rotate?3:2,centeredSlides:!0,virtualTranslate:!e.params.cssMode})})}const ei=[Cs,Ps,Ls,Is,zs,As,$s,Os,Ds,ks,Hs,Gs,Bs,Xs,Ys,Rs,qs,js,Us,Ks,Zs,Qs,Js];Z.use(ei);export{Z as S};
-//# sourceMappingURL=vendor-3b021696.js.map
+//# sourceMappingURL=vendor-4e5e57a9.js.map
