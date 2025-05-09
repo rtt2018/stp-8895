@@ -10,10 +10,6 @@ a[data-visibility='true']::before {
   transition-property: opacity, transform;
 }
 
-a[data-visibility='false']::before {
-  // opacity: 0;
-}
-
 .header-nav-link::before {
   content: '';
   position: absolute;
@@ -75,7 +71,7 @@ a[data-visibility='false']::before {
   display: none;
 }
 
-@media only screen and (min-width: 1200px) {
+@include media(desktop) {
   .header {
     height: 80px;
   }
