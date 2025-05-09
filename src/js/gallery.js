@@ -13,12 +13,12 @@ const slideGalleryElements = document.querySelector('[data-gallery-slide]');
 const paginationGalleryElement = document.querySelector(
     '[data-gallery-pagination]'
 );
-let swiper;
+let swiperGallery;
 
 function initSwiper() {
-    if (swiper) swiper.destroy(true, true);
+    if (swiperGallery) swiperGallery.destroy(true, true);
 
-    swiper = new Swiper(swiperGalleryContainer, {
+    swiperGallery = new Swiper(swiperGalleryContainer, {
         slideClass: 'swiper-slide',
         wrapperClass: 'swiper-wrapper',
         centeredSlides: true,
