@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!localStorage.getItem('COOKIES_ACCEPT')) {
         cookiesPoppup.dataset.isCookiesVisible = true;
         document.documentElement.dataset.scrollLock = true;
-        console.log('trersdasd')
     }
 })
 
@@ -19,5 +18,4 @@ function acceptCookies(event) {
     localStorage.setItem('COOKIES_ACCEPT', event.target.dataset.isAccept === 'true')
     cookiesPoppup.dataset.isCookiesVisible = false;
     document.documentElement.dataset.scrollLock = false;
-
 }
