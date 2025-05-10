@@ -61,9 +61,10 @@
 .about-image-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 4px 16px;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  // gap: 4px 16px;
+  gap: 22px 0;
+  margin-top: 7px;
+  margin-bottom: 7px;
   height: 400px;
 
   @include media(desktop) {
@@ -81,6 +82,7 @@
   align-items: center;
   border-radius: 15px;
   height: 190px;
+  width: 130px;
   @include media(desktop) {
     border-radius: 20px;
     width: 200px;
@@ -90,22 +92,22 @@
 
 .about-image-list li {
   &:nth-child(1) {
-    transform: rotate(7deg);
+    transform: rotate(7deg) translateX(10px);
     background-color: #ffe5d3;
   }
   &:nth-child(2) {
-    transform: rotate(-7deg);
+    transform: rotate(-7deg) translateX(-10px);
     background-color: #d4edda;
   }
   &:nth-child(3) {
-    transform: rotate(-7deg);
+    transform: rotate(-7deg) translateX(10px);
     background: #fdd2ce;
     @include media(desktop) {
       transform: rotate(7deg);
     }
   }
   &:nth-child(4) {
-    transform: rotate(7deg);
+    transform: rotate(7deg) translateX(-10px);
     background: #fff8cc;
     @include media(desktop) {
       transform: rotate(-7deg);
