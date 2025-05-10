@@ -119,14 +119,14 @@
     transform: rotate(-7deg) translateX(10px);
     background: #fdd2ce;
     @include media(desktop) {
-      transform: rotate(-7deg) translateX(18px);
+      transform: rotate(7deg) translateX(18px);
     }
   }
   &:nth-child(4) {
     transform: rotate(7deg) translateX(-10px);
     background: #fff8cc;
     @include media(desktop) {
-      transform: rotate(7deg) translateX(22px);
+      transform: rotate(-7deg) translateX(22px);
     }
   }
 }
