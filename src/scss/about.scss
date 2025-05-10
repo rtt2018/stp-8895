@@ -103,7 +103,6 @@
 .about-image-list li {
   &:nth-child(1) {
     transform: rotate(7deg) translateX(10px);
-    transform: rotate(7deg) translateX(10px);
     background-color: #ffe5d3;
     @include media(desktop) {
       transform: rotate(7deg) translateX(16px);
@@ -111,24 +110,23 @@
   }
   &:nth-child(2) {
     transform: rotate(-7deg) translateX(-10px);
-    transform: rotate(-7deg) translateX(-10px);
     background-color: #d4edda;
     @include media(desktop) {
       transform: rotate(-7deg) translateX(18px);
     }
   }
   &:nth-child(3) {
-    transform: rotate(7deg) translateX(10px);
+    transform: rotate(-7deg) translateX(10px);
     background: #fdd2ce;
     @include media(desktop) {
-      transform: rotate(7deg) translateX(18px);
+      transform: rotate(-7deg) translateX(18px);
     }
   }
   &:nth-child(4) {
-    transform: rotate(-7deg) translateX(-10px);
+    transform: rotate(7deg) translateX(-10px);
     background: #fff8cc;
     @include media(desktop) {
-      transform: rotate(-7deg) translateX(22px);
+      transform: rotate(7deg) translateX(22px);
     }
   }
 }
