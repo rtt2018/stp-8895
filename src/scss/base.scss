@@ -44,10 +44,16 @@ main {
 
 section {
   scroll-margin-top: 48px;
-  margin-bottom: 48px;
 
   @include media(desktop) {
     scroll-margin-top: 80px;
+  }
+}
+
+main > section {
+  margin-bottom: 48px;
+
+  @include media(desktop) {
     margin-bottom: 80px;
   }
 }
