@@ -80,11 +80,7 @@ a[data-visibility='true']::before {
     display: block;
   }
 
-  [data-class='burger-btn'] {
-    display: none;
-  }
-
-  [data-class='modal-window'] {
+  [data-burger-button] {
     display: none;
   }
 
