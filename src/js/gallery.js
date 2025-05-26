@@ -105,7 +105,6 @@ let resizeTimer;
 window.addEventListener('resize', () => {
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(() => {
-    console.log('Resizing and re-initializing Swiper due to viewport change.');
     initSwiper();
   }, 250);
 });
