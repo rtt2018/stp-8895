@@ -37,7 +37,10 @@ const swiperReviews = new Swiper(swiperContainer, {
             },
         },
         1200: {
-            pagination: false,
+            // pagination: false,
+            navigation: {
+                enabled: true,
+            },
         },
     }
 });

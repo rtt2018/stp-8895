@@ -147,13 +147,12 @@
   width: 10px;
   height: 10px;
   background-color: #c9cccf;
-  border-radius: 50%;
+  border-radius: 5px;
   transition: 0.3s ease-in-out;
   transition-property: width, background-color;
 }
 
 [data-gallery-pagination-bullet='true'] {
-  border-radius: 8px;
   width: 26px;
   height: 10px;
   background-color: #d10003;
