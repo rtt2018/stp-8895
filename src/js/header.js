@@ -45,5 +45,5 @@ const observer = new IntersectionObserver(
 );
 
 document
-  .querySelectorAll('section')
+  .querySelectorAll('[data-section]')
   .forEach(section => observer.observe(section));
