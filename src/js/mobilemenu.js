@@ -1,4 +1,4 @@
-const openBtnEl = document.querySelector('[data-burger-button]');
+const openBtnEl = document.querySelector('[data-type="mobile-menu-openBtn"]');
 const closeBtnEl = document.querySelector('[data-type="mobile-menu-closeBtn"]');
 const burgerMenuEl = document.querySelector('[data-type="mobile-menu-overlay"]');
 
